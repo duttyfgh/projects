@@ -1,0 +1,11 @@
+.sun:hover {
+    content: url(../../assets/sunHover.png);
+    transition: none;
+}
+
+div .moon:hover {
+    content: url(../../assets/moonHover.png);
+    filter: brightness(0) saturate(100%);
+    width: 2.1rem;
+    transition: none;
+}

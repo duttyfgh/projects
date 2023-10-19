@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "variables";
+
+html {
+  box-sizing: border-box;
+  font-size: calc(100vw / 1920 * 10);
+  @media (max-width: 1024px) {
+    font-size: calc(100vw / 786 * 10);
+  }
+
+  @media (max-width: 767px) {
+    font-size: calc(100vw / 500 * 10);
+  }
+
+  @media (max-width: 500) {
+    font-size: calc(100vw / 360 * 10);
+  }
+}
+
+* {
+  font-size: 2rem;
+}
+
+.contours {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%)
+    hue-rotate(181deg) brightness(102%) contrast(101%);
+}
+
+.dark .contours {
+  filter: none;
+}
+
+.contoursReverse {
+  filter: brightness(0) saturate(100%);
+}
+
+.dark .contoursReverse {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%)
+    hue-rotate(181deg) brightness(102%) contrast(101%);
+}
+
+.dark .default {
+  background-color: black;
+  color: white;
+}
+
+.dark .reverse {
+  color: black;
+  background-color: white;
+}
+
+* {
+  transition: 0.2s ease-in-out;
+}
+
+.border {
+  border: 1px solid #dadada;
+}
+
+.dark .border {
+  border: 1px solid white;
+}
+
+.transitioon {
+  transition: 0.4s ease-out;
+}
