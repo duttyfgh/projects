@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Main = () => {
   return (
     <main>
-      <div className="h-[80vh] flex justify-center items-center">
+      <div className="h-[83vh] flex justify-center items-center">
         <div className='flex gap-[8rem]'>
           {
             projects.map(project => (
@@ -13,7 +13,7 @@ const Main = () => {
                   <div className='text-center text-[2.8rem] pb-4 uppercase'>
                     {project.name}
                   </div>
-                  <div className='w-[50rem] h-[30rem] overflow-hidden rounded-3xl'>
+                  <div className='w-[50rem] h-[30rem] overflow-hidden rounded-3xl relative'>
                     <img
                       src={project.previewImg}
                       alt={project.name}
@@ -26,8 +26,10 @@ const Main = () => {
                             cursor-pointer
                             transition-all
                             hover
-
                     ' />
+                    <span className='absolute z-100 bottom-0 text-end bg-[#b8b8b844] w-[100%] text-[#222121] p-[1.5rem] font-bold'>
+                      {project.data}
+                      </span>
                   </div>
                 </div>
               </Link>
@@ -41,4 +43,3 @@ const Main = () => {
 }
 
 export default Main
-// hover:w-[53rem]

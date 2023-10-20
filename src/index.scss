@@ -43,23 +43,23 @@ html {
 }
 
 .dark .default {
-  background-color: black;
+  background-color: #1c1d2d;
   color: white;
 }
 
 .dark .reverse {
   background-color: white;
-  color: black;
+  color: #1c1d2d;
 }
 
 .light .reverse {
   color: white;
-  background-color: black;
+  background-color: #1c1d2d;
 }
 
 .light .reverse {
   color: white;
-  background-color: black;
+  background-color: #1c1d2d;
 }
 
 * {
@@ -94,3 +94,18 @@ html {
   display: none;
 }
 
+.borderB {
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.borderB .dark {
+  border-bottom: 1px solid #474747;
+}
+
+.borderT {
+  border-top: 1px solid #a9a9a9;
+}
+
+.borderT .dark {
+  border-top: 1px solid #474747;
+}

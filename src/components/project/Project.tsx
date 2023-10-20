@@ -60,18 +60,18 @@ const Project = () => {
             <button onClick={prev}>
               <img src={arrowL} alt="<" className="contoursReverse w-[2rem] hover mr-[2rem]" title='<- Preview' />
             </button>
+
             <div className="relative">
               <div className="absolute w-[70rem] h-[100%] z-100"></div>
-
               <div
                 className="flex w-[70rem] overflow-x-scroll gap-[5rem] test scroll-smooth"
                 ref={sliderContainerRef}>
-
                 {filteredProject?.images.map(img => (
                   <img key={img.id} src={img.url} alt={img.title} className="w-full rounded-2xl" />
                 ))}
               </div>
             </div>
+
             <button onClick={next}>
               <img src={arrowR} alt=">" className="contoursReverse w-[2rem] hover ml-[2rem]" title='Next ->' />
             </button>
@@ -85,6 +85,7 @@ const Project = () => {
             >
               Visit the site
             </a>
+
             <a
               className="bordeR p-[1.5rem] px-[2.2rem] text-[2.5rem] rounded-2xl hover"
               href={filteredProject?.githubUrl}
@@ -99,6 +100,7 @@ const Project = () => {
 
       <div className="relative">
         <div className="absolute w-[40rem] h-[100%] z-100"></div>
+
         <div
           className="w-[40rem] mt-[8rem] flex gap-[5rem] overflow-x-scroll scroll-smooth test "
           ref={sliderTextRef}>
