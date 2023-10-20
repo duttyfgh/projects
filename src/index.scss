@@ -48,22 +48,49 @@ html {
 }
 
 .dark .reverse {
-  color: black;
   background-color: white;
+  color: black;
+}
+
+.light .reverse {
+  color: white;
+  background-color: black;
+}
+
+.light .reverse {
+  color: white;
+  background-color: black;
 }
 
 * {
   transition: 0.2s ease-in-out;
 }
 
-.border {
-  border: 1px solid #dadada;
+.bordeR {
+  border: 1px solid #000000;
 }
 
-.dark .border {
+.dark .bordeR {
   border: 1px solid white;
 }
 
 .transitioon {
   transition: 0.4s ease-out;
 }
+
+.hover:hover {
+  transform: scale(1.05);
+}
+
+.light p {
+  color: #474747;
+}
+
+.dark p {
+  color: #a8a8a8;
+}
+
+.test::-webkit-scrollbar {
+  display: none;
+}
+

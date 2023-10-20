@@ -1,0 +1,7 @@
+div .tool {
+font-size: 0px;
+}
+
+.tools:hover .tool {
+    font-size: 2.6rem;
+}

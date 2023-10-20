@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      // Добавьте ваш пользовательский класс
+      styles: {
+        '.smooth-scroll': {
+          scrollBehavior: 'smooth',
+        },
+      },
+    },
   },
   plugins: [],
 }

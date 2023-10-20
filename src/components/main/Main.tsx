@@ -1,4 +1,4 @@
-import projects from './projects.data.js'
+import projects from '../project/projects.data.js'
 import { Link } from 'react-router-dom'
 
 const Main = () => {
@@ -13,20 +13,22 @@ const Main = () => {
                   <div className='text-center text-[2.8rem] pb-4 uppercase'>
                     {project.name}
                   </div>
-                  <img
-                    src={project.previewImg}
-                    alt={project.name}
-                    className='
-                          w-[50rem]
-                          h-[30rem]
-                          border
-                          rounded-3xl
-                          object-cover
-                          cursor-pointer
-                          transition-all
-                          hover:w-[53rem]
-                          transitioon
-                  ' />
+                  <div className='w-[50rem] h-[30rem] overflow-hidden rounded-3xl'>
+                    <img
+                      src={project.previewImg}
+                      alt={project.name}
+                      className='
+                            w-[50rem]
+                            h-[30rem]
+                            border
+                            rounded-3xl
+                            object-cover
+                            cursor-pointer
+                            transition-all
+                            hover
+
+                    ' />
+                  </div>
                 </div>
               </Link>
             ))}
@@ -39,3 +41,4 @@ const Main = () => {
 }
 
 export default Main
+// hover:w-[53rem]
