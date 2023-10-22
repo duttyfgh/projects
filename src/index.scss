@@ -7,6 +7,7 @@
 html {
   box-sizing: border-box;
   font-size: calc(100vw / 1920 * 10);
+  background-color: #1c1d2d;
   @media (max-width: 1024px) {
     font-size: calc(100vw / 786 * 10);
   }
@@ -67,7 +68,7 @@ html {
 }
 
 .bordeR {
-  border: 1px solid #000000;
+  border: 1px solid #cecece;
 }
 
 .dark .bordeR {
@@ -95,7 +96,7 @@ html {
 }
 
 .borderB {
-  border-bottom: 1px solid #a9a9a9;
+  border-bottom: 1px solid #cecdcd;
 }
 
 .borderB .dark {
@@ -103,9 +104,29 @@ html {
 }
 
 .borderT {
-  border-top: 1px solid #a9a9a9;
+  border-top: 1px solid #cecdcd;
 }
 
 .borderT .dark {
   border-top: 1px solid #474747;
 }
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  width: 1.5rem; /* ширина для вертикального скролла */
+  height: 8px; 
+  background-color: white;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #1c1d2d;
+  border: 1px solid #292b3f;
+  border-radius: 0.8rem;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-button {
+display: none;
+}
+

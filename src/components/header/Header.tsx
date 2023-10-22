@@ -13,7 +13,7 @@ const Header = () => {
         justify-between
         items-center  
         p-[6rem]
-        border-b
+        borderB
     ">
       <span className='text-[4rem] uppercase'>DMYTRO LAGODICH PROJECTS{currentProject && ` •  ${currentProject}`}</span>
       <div

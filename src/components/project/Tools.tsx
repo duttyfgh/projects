@@ -11,7 +11,7 @@ interface ITools {
 
 const Tools = ({ tools }: ITools) => {
     return (
-        <div>
+        <div className="flex flex-col justify-start h-[83vh]">
             <Link to="/">
                 <img
                     src={back}
