@@ -7,7 +7,6 @@
 html {
   box-sizing: border-box;
   font-size: calc(100vw / 1920 * 10);
-  background-color: #1c1d2d;
   @media (max-width: 1024px) {
     font-size: calc(100vw / 786 * 10);
   }
