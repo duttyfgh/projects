@@ -4,7 +4,7 @@ import cls from './Main.module.css'
 
 const Main = () => {
   return (
-    <main className={cls.main}>
+    <main className={`${cls.main} default`}>
       <div className={cls.mainShell}>
         {projects.map((project) => (
           <Link key={project.id} to={`/proj/?project=${project.id}`}>
