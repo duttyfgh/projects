@@ -104,6 +104,7 @@
 @media(max-width: 420px) {
     .main {
         padding-top: 4rem;
+        padding-bottom: 1.5rem;
 
     }
     .mainShell {
