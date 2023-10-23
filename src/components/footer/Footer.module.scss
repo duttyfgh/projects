@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainText {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.link {
+  color: #2563eb;
+  text-transform: lowercase;
+  font-size: 3.6rem;
+  color: 3.6rem;
+
+  &hover {
+    text-decoration: underline;
+  }
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+@media(max-width: 750px) {
+    .mainText,
+    .link {
+        font-size: 2.5rem;
+    }
+
+    .icons {
+        width: 20rem;
+    }
+}

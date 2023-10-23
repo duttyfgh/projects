@@ -3,8 +3,8 @@
     justify-content: center;
     align-items: center;
 
-    padding-top: 8rem;
-    padding-bottom: 12rem;
+    padding-top: 0rem;
+    padding-bottom: 4rem;
 
     height: 83vh;
 
@@ -74,10 +74,27 @@
 @media(max-width: 1366px) {
     .main {
         height: 100%;
+        box-sizing: content-box;
+    }
+
+    .mainShell {
+        margin-top: -16rem;
     }
 }
 
-@media(max-width: 720px) {
+.mainShell {
+    margin-top: 0;
+}
+
+
+@media(max-width: 750px) {
+    .main {
+        box-sizing: content-box;
+        align-items: start;
+        padding-top: 4rem;
+        padding-bottom: 0;
+    }
+
     .projectImage {
         width: 40rem;
         height: 25rem;

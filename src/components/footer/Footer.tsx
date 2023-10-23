@@ -1,3 +1,5 @@
+import cls from './Footer.module.scss'
+
 const icons = [
   {
     url: 'https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Instagram.svg',
@@ -19,12 +21,12 @@ const icons = [
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center borderT default ">
-      <span className="text-[3.6rem] uppercase mt-[2rem]">
+    <footer className={`${cls.footer} borderT default`}>
+      <span className={cls.mainText}>
         created and maintained •
-        <a href="#" className="text-blue-600 hover:underline lowercase text-[3.6rem]" target='_blank'> dutyfgh</a>
+        <a href="#" className={cls.link} target='_blank'> dutyfgh</a>
       </span>
-      <div className='flex gap-[2rem] py-[2rem]'>
+      <div className={cls.icons}>
         {icons.map(icon => (
           <a key={icon.link} href={icon.link} target='_blank'>
             <img src={icon.url} alt="..." className="w-[5rem] hover" />
