@@ -24,7 +24,6 @@ const Footer = () => {
         created and maintained •
         <a href="#" className="text-blue-600 hover:underline lowercase text-[3.6rem]" target='_blank'> dutyfgh</a>
       </span>
-      <div className="w-[120rem] h-[0.1rem] my-[2rem] borderB"></div>
       <div className='flex gap-[2rem] py-[2rem]'>
         {icons.map(icon => (
           <a key={icon.link} href={icon.link} target='_blank'>

@@ -1,3 +1,16 @@
+.sun {
+    margin-left: 0.5rem;
+    user-select: none;
+    width: 2rem;
+}
+
+.moon {
+    margin-right: 0.5rem;
+    user-select: none;
+    width: 2rem;
+
+}
+
 .sun:hover {
     content: url(../../assets/sunHover.png);
     transition: none;
@@ -8,4 +21,52 @@ div .moon:hover {
     filter: brightness(0) saturate(100%);
     width: 2.1rem;
     transition: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+
+}
+
+.mainText {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.themeModToggle {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    cursor: pointer;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 4rem;
+    padding: 0.6rem;
+
+}
+
+.bool {
+    position: absolute;
+    z-index: 10;
+    background-color: #ffffff;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+}
+
+@media(max-width: 750px) {
+    .mainText {
+        max-width: 25rem;
+    }
 }
