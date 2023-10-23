@@ -101,10 +101,13 @@
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 420px) {
     .main {
-        padding-top: 20rem;
-        padding-bottom: 20rem;
+        padding-top: 4rem;
 
+    }
+    .mainShell {
+        padding: 0;
+        gap: 3rem;
     }
 }
