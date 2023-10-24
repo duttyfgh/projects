@@ -25,7 +25,7 @@ interface ThemeProviderProps {
 export const Provider: React.FC<ThemeProviderProps> = ({ children }: ThemeProviderProps) => {
   const [mode, setMode] = useState<string>(() => {
     const storedMode = localStorage.getItem('theme');
-    return storedMode || 'light'; // Default value
+    return storedMode || 'dark'; // Default value
   });
 
   const [currentProject, setCurrentProject] = useState<string>(''); // Добавляем состояние для currentProject
