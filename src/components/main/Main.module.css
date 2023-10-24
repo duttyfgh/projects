@@ -14,13 +14,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8rem;
     flex-wrap: wrap;
 }
 
 .projectContainer {
     border-radius: 2rem;
     overflow: hidden;
+    margin-top: 8rem;
+    margin-right: 8rem;
 }
 
 .projectName {
@@ -69,17 +70,15 @@
     .mainShell {
         width: 150rem;
     }
+
 }
 
 @media(max-width: 1366px) {
     .main {
-        height: 100%;
+        height: auto;
         box-sizing: content-box;
     }
 
-    .mainShell {
-        margin-top: -16rem;
-    }
 }
 
 .mainShell {
@@ -91,24 +90,21 @@
     .main {
         box-sizing: content-box;
         align-items: start;
-        padding-top: 4rem;
-        padding-bottom: 0;
+        padding-bottom: 4rem;
     }
 
     .projectImage {
         width: 40rem;
         height: 25rem;
     }
-}
 
-@media(max-width: 420px) {
-    .main {
-        padding-top: 4rem;
-        padding-bottom: 1.5rem;
-
-    }
     .mainShell {
         padding: 0;
-        gap: 3rem;
     }
+
+    .projectContainer {
+        margin-top: 4.5rem;
+        margin-right: 0;
+    }
+
 }
