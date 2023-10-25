@@ -85,8 +85,13 @@
     margin-top: 0;
 }
 
+@media(max-width: 1024px) {
+    .projectContainer {
+        margin-right: 0;
+    }
+}
 
-@media(max-width: 750px) {
+@media(max-width: 768px) {
     .main {
         box-sizing: content-box;
         align-items: start;
@@ -104,7 +109,6 @@
 
     .projectContainer {
         margin-top: 4.5rem;
-        margin-right: 0;
     }
 
 }

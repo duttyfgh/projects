@@ -32,7 +32,7 @@ const projects: IProject[] = [
             {
                 url: photo,
                 title: 'image title',
-                id: '1212sdf3d3sdfS#D#@Q@#F(F',
+                id: '1212sdf3d3sdfS#1231312312312312123Q@#F(F',
                 currentDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.\
                 Ab, et! Minus doloribus dolore, nisi, facilis voluptatum omnis labore\
                  nemo optio inventore dolores soluta vel placeat. Nisi, distinctio modi.\
@@ -47,14 +47,14 @@ const projects: IProject[] = [
             {
                 url: phot2,
                 title: 'title343',
-                id: '1212sdf3d3sdfS#D#@Q@#F(F2',
+                id: '1212sdf3qqqqqqqqqqqqqqqqqqqqqq',
                 currentDescription: 'ur error, commodi porro? Laboriosam vero asperiores molestiae voluptate\
                 sequi! Voluptatem nam illum'
             },
             {
                 url: phot3,
                 title: 'image title2',
-                id: '1212sdf3d3sdfS#D#@Q@#F(F2',
+                id: '1212sdf3d3sdfS#D#@Q@#F(F0009112',
                 currentDescription: 'ore dolores soluta vel placeat. Nisi, distinctio modi.\
                 Suscipit libero fuga laboriosam quae incidunt, consequatur dolorum quidem'
             }
@@ -94,7 +94,7 @@ const projects: IProject[] = [
     {
         name: 'name2',
         id: 'DFKGDFJL847348934DFD1Fdd2',
-        url:'https://www.ranwomUrl.com',
+        url: 'https://www.ranwomUrl.com',
         previewImg: 'https://img.freepik.com/free-vector/business-teamwork-concept-teamwork-leadership-effort-hard-work-team-strategy-concept-of-brainstorm-at-workshop-management-skills-vector-cartoon-illustration-flat-design_1150-56223.jpg?w=1380&t=st=1697652837~exp=1697653437~hmac=1ede437ef61c21df7b9be8b0160d745ff10eaac0c557d7ec20557add8bdf0bc2',
         images: [
             {
@@ -136,7 +136,7 @@ const projects: IProject[] = [
     {
         name: 'name3',
         id: 'DFKGDFJL847348934Dsdfsdfsdf12FDFdd3',
-        url:'https://www.ranwomUrl.com',
+        url: 'https://www.ranwomUrl.com',
         previewImg: 'https://img.freepik.com/free-vector/hand-drawn-business-planning_23-2149150731.jpg?w=1380&t=st=1697652868~exp=1697653468~hmac=2315c471560741e1152634130ab5bbefc0c879b3f6c2e5c0e088db1d249299be',
         images: [
             {

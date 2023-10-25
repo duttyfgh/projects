@@ -65,6 +65,12 @@ div .moon:hover {
     border-radius: 50%;
 }
 
+@media(max-width: 1026px) {
+    .mainText {
+        max-width: 50rem;
+    }
+}
+
 @media(max-width: 750px) {
     .mainText {
         max-width: 25rem;

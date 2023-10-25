@@ -7,7 +7,7 @@ const Main = () => {
     <main className={`${cls.main} default`}>
       <div className={cls.mainShell}>
         {projects.map((project) => (
-          <Link key={project.id} to={`/proj/?project=${project.id}`}>
+          <Link key={project.id} to={`proj/?project=${project.id}`}>
             <div className={cls.projectContainer}>
               <div className={cls.projectName}>
                 {project.name}

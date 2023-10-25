@@ -1,0 +1,22 @@
+.carousel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carouselContainer {
+    width: 90rem;
+    display: flex; 
+    gap: 2rem;
+}
+
+.window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.allItems {
+    height: 100%;
+    display: flex;
+    border-radius: 1.2rem;
+}
