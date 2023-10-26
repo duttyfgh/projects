@@ -1,25 +1,33 @@
 import { ReactNode, useState } from "react"
 import arrowR from '../assets/arrowR.png'
 import arrowL from '../assets/arrowL.png'
-import cls from './Carousel.module.css'
+import cls from './ImgCarousel.module.css'
 import { IProject } from "../components/project/projects.data"
+import TextCarousel from "./TextCarousel"
 
-interface CarouselProps {
+interface ImgCarouselProps {
   children: ReactNode,
-  filteredProject: IProject | null
+  filteredProject: IProject | null,
 }
 
-const Carousel = ({ children, filteredProject }: CarouselProps) => {
-  const [pages, setPages] = useState([])
+const ImgCarousel = ({ children, filteredProject }: ImgCarouselProps) => {
   const [offset, setOffset] = useState(0)
+  const [textOffset, setTextOffset] = useState(0)
   const PAGE_WIDTH = 90
   //one step - -81.5
 
-  const next = () => {
+  const next = (pageWidth: number) => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset - 81.5
       //@ts-ignore
-      const maxOffset = -(PAGE_WIDTH * (children?.length - 1) - 17.1)
+      const maxOffset = -(pageWidth * (children?.length - 1) - 17.1)
+      return Math.max(newOffset, maxOffset)
+    })
+
+    setTextOffset((currentOffset) => {
+      const newOffset = currentOffset - 40
+      //@ts-ignore
+      const maxOffset = -(pageWidth * (children?.length - 1) - 100)
       return Math.max(newOffset, maxOffset)
     })
   }
@@ -27,6 +35,11 @@ const Carousel = ({ children, filteredProject }: CarouselProps) => {
   const prev = () => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset + 81.5
+      return Math.min(newOffset, 0)
+    })
+
+    setTextOffset((currentOffset) => {
+      const newOffset = currentOffset + 40
       return Math.min(newOffset, 0)
     })
   }
@@ -49,7 +62,7 @@ const Carousel = ({ children, filteredProject }: CarouselProps) => {
             {children}
           </div>
         </div>
-        <button onClick={next}>
+        <button onClick={() => next(PAGE_WIDTH)}>
           <img
             src={arrowR}
             alt="->"
@@ -58,8 +71,19 @@ const Carousel = ({ children, filteredProject }: CarouselProps) => {
           />
         </button>
       </div>
+
+      <TextCarousel offset={textOffset}>
+        {filteredProject?.images.map(img => (
+          <div key={img.id} className="max-w-[44rem] min-w-[40rem] text-[2.5rem] px-[2rem]">
+            <span className="font-bold text-[2.6rem]">{img.title}</span>
+            <p>
+              {img.currentDescription}
+            </p>
+          </div>
+        ))}
+      </TextCarousel>
     </div>
   )
 }
 
-export default Carousel
+export default ImgCarousel

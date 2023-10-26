@@ -3,7 +3,7 @@ import Tools from "./Tools/Tools"
 import TextSlider from "./Sliders/TextSlider"
 import ImageSlider from "./Sliders/ImageSlider"
 import { IProject } from "./projects.data"
-import Carousel from '../../carousel/Carousel'
+import ImgCarousel from '../../carousel/ImgCarousel'
 
 //  PLEASE REFACTOR ME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 interface ProjectForDesktopProps {
@@ -30,11 +30,11 @@ const ProjectForDesktop = ({ filteredProject, next, prev, sliderContainerRef, sl
             prev={prev}
             sliderContainerRef={sliderContainerRef}
             isMobile={isMobile} /> */}
-        <Carousel filteredProject={filteredProject}>
+        <ImgCarousel filteredProject={filteredProject}>
           {filteredProject?.images.map(img => (
             <img key={img.id} src={img.url} alt={img.title} className={`rounded-2xl`} />
           ))}
-        </Carousel>
+        </ImgCarousel>
 
         <div className="w-[100%] flex justify-center gap-[20rem] mt-[4rem]">
           <a

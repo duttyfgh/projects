@@ -1,10 +1,11 @@
 .carousel {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-center;
 }
 
 .carouselContainer {
     width: 90rem;
+    height: 50rem;
     display: flex; 
     gap: 2rem;
 }
