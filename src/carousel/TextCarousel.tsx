@@ -7,8 +7,6 @@ interface ImgCarouselProps {
 }
 
 const TextCarousel = ({ children, offset }: ImgCarouselProps) => {
-    const PAGE_WIDTH = 40
-
     return (
         <div className={cls.carousel}>
             <div className={cls.carouselContainer}>

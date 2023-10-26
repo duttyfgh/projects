@@ -17,6 +17,7 @@ const ImgCarousel = ({ children, filteredProject }: ImgCarouselProps) => {
   //one step - -81.5
 
   const next = (pageWidth: number) => {
+    //img carousel
     setOffset((currentOffset) => {
       const newOffset = currentOffset - 81.5
       //@ts-ignore
@@ -24,6 +25,7 @@ const ImgCarousel = ({ children, filteredProject }: ImgCarouselProps) => {
       return Math.max(newOffset, maxOffset)
     })
 
+    //text carousel
     setTextOffset((currentOffset) => {
       const newOffset = currentOffset - 40
       //@ts-ignore
@@ -33,11 +35,13 @@ const ImgCarousel = ({ children, filteredProject }: ImgCarouselProps) => {
   }
 
   const prev = () => {
+    //img carousel
     setOffset((currentOffset) => {
       const newOffset = currentOffset + 81.5
       return Math.min(newOffset, 0)
     })
 
+    //text carousel
     setTextOffset((currentOffset) => {
       const newOffset = currentOffset + 40
       return Math.min(newOffset, 0)
@@ -46,30 +50,47 @@ const ImgCarousel = ({ children, filteredProject }: ImgCarouselProps) => {
 
   return (
     <div className={cls.carousel}>
-      <div className={cls.carouselContainer}>
-        <button onClick={prev}>
-          <img
-            src={arrowL}
-            alt="<-"
-            className="contoursReverse w-[3rem] hover cursor-pointer"
-            title='<- Preview'
-          />
-        </button>
-        <div className={` bordeR rounded-2xl ${cls.window}`}>
-          <div className={`gap-[1rem] ${cls.allItems}`} style={{
-            transform: `translateX(${offset}rem)`,
-          }}>
-            {children}
+      <div className="flex flex-col justify-center">
+        <div className={cls.carouselContainer}>
+          <button onClick={prev}>
+            <img
+              src={arrowL}
+              alt="<-"
+              className="contoursReverse w-[3rem] hover cursor-pointer"
+              title='<- Preview'
+            />
+          </button>
+          <div className={` bordeR rounded-2xl ${cls.window}`}>
+            <div className={`gap-[1rem] ${cls.allItems}`} style={{
+              transform: `translateX(${offset}rem)`,
+            }}>
+              {children}
+            </div>
           </div>
+          <button onClick={() => next(PAGE_WIDTH)}>
+            <img
+              src={arrowR}
+              alt="->"
+              className="contoursReverse w-[3rem] hover cursor-pointer"
+              title='Next ->'
+            />
+          </button>
         </div>
-        <button onClick={() => next(PAGE_WIDTH)}>
-          <img
-            src={arrowR}
-            alt="->"
-            className="contoursReverse w-[3rem] hover cursor-pointer"
-            title='Next ->'
-          />
-        </button>
+        <div className="w-[100%] flex justify-center gap-[8rem] mt-[4rem]">
+          <a
+            className="reverse p-[1.5rem] px-[2.2rem] text-[2.5rem] rounded-2xl hover"
+            href={filteredProject?.url}
+            title='Click to visit the site'>
+            Visit the site
+          </a>
+
+          <a
+            className="bordeR p-[1.5rem] px-[2.2rem] text-[2.5rem] rounded-2xl hover"
+            href={filteredProject?.githubUrl}
+            title='Click to view code this site'>
+            See the code
+          </a>
+        </div>
       </div>
 
       <TextCarousel offset={textOffset}>

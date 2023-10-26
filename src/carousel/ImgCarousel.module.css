@@ -1,6 +1,10 @@
 .carousel {
     display: flex;
-    justify-content: space-center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-left: 10rem;
+
 }
 
 .carouselContainer {
