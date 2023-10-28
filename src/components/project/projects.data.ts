@@ -48,15 +48,28 @@ const projects: IProject[] = [
                 url: phot2,
                 title: 'title343',
                 id: '1212sdf3qqqqqqqqqqqqqqqqqqqqqq',
-                currentDescription: 'ur error, commodi porro? Laboriosam vero asperiores molestiae voluptate\
-                sequi! Voluptatem nam illum'
+                currentDescription: 'Rnepudiandae optio atque eos accusamus placeat quo tempora molestiae sit voluptate\
+                minus consequatur error, commodi porro? Laboriosam vero asperiores molestiae voluptate\
+                sequi! Voluptatem nam illum et laborum sapiente vero eos sequi tenetur, accusantium repellat\
+                 sint sed optio soluta pariatur dolorem quod autem placeat perspiciatis ipsam veritatis reiciendis\
+                  repellendus! Dignissimos, quan repudiandae optio atque eos accusamus placeat quo tempora molestiae sit voluptate\
+                  minus consequatur error, commodi porro? Laboriosam vero asperiores molestiae voluptate\
+                  sequi! Voluptatem nam illum et laborum sapiente vero eos sequi tenetur, accusantium repellat\
+                   sint sed optio soluta pariatur dolorem quod autem placeat perspiciatis ipsam veritatis reiciendis\
+                    repellendus! Dignissimos, qua'
             },
             {
                 url: phot3,
                 title: 'image title2',
                 id: '1212sdf3d3sdfS#D#@Q@#F(F0009112',
-                currentDescription: 'ore dolores soluta vel placeat. Nisi, distinctio modi.\
-                Suscipit libero fuga laboriosam quae incidunt, consequatur dolorum quidem'
+                currentDescription: 'Rore dolores soluta vel placeat. Nisi, distinctio modi.\
+                Suscipit libero fuga laboriosam quae incidunt, consequatur dolorum quidem\
+                int sed optio soluta pariatur dolorem quod autem placeat perspiciatis ipsam veritatis reiciendis\
+                repellendus! Dignissimos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit.\
+                Ab, et! Minus doloribus dolore, nisi, facilis voluptatum omnis labore\
+                 nemo optio inventore dolores soluta vel placeat. Nisi, distinctio modi.\
+                  Suscipit libero fuga laboriosam quae incidunt, consequatur dolorum quidem\
+                   hic, pariatur, temporibus autem nobis '
             }
         ],
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.\

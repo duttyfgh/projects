@@ -22,11 +22,9 @@ const ProjectForDesktop = ({ filteredProject }: ProjectForDesktopProps) => {
         </Link>
       </div>
 
-      <div className="h-[85vh] flex justify-between pr-[6rem] pl-[6rem] default">
+      <div className="h-auto flex flex-col pr-[6rem] pl-[6rem] default">
 
-        <Tools tools={filteredProject?.tools || []} />
-
-        <div className="flex flex-col items-center w-[100%] ">
+        <div className="flex flex-col items-center w-[100%]">
           <ImgCarousel filteredProject={filteredProject}>
             {filteredProject?.images.map(img => (
               <img key={img.id} src={img.url} alt={img.title} className={`rounded-2xl`} />
@@ -34,6 +32,20 @@ const ProjectForDesktop = ({ filteredProject }: ProjectForDesktopProps) => {
           </ImgCarousel>
 
         </div>
+
+        <Tools tools={filteredProject?.tools || []} />
+
+        <div className="mb-[6rem]">
+          <div className="borderB">
+            <span className="text-[4rem]">
+              Description
+            </span>
+          </div>
+          <p className="text-[2.2rem] pt-[1rem]">
+            {filteredProject?.description}
+          </p>
+        </div>
+
       </div>
     </>
   )

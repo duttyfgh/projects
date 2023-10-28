@@ -12,7 +12,6 @@ interface ITools {
 const Tools = ({ tools }: ITools) => {
     return (
         <div className={cls.main}>
-            <div className={cls.container}>
                 <div className="borderB w-[100%] mb-[1rem]">
                     <h1 className="text-[4rem]">Tools</h1>
                 </div>
@@ -27,7 +26,6 @@ const Tools = ({ tools }: ITools) => {
                         ))}
                 </div>
             </div>
-        </div>
     )
 }
 

@@ -15,8 +15,8 @@ const ImgCarousel = ({ children, filteredProject, isTablet }: ImgCarouselProps) 
   const [offset, setOffset] = useState(0)
   const [textOffset, setTextOffset] = useState(0)
   const PAGE_WIDTH = isTablet ? 60.3 : 90
-  const oneImgStep = isTablet ? 52 : 81.5 
-  const oneTextStep = 53 
+  const oneImgStep = isTablet ? 52 : 81.5
+  const oneTextStep = 53
 
   const next = (pageWidth: number) => {
     //img carousel
@@ -31,7 +31,7 @@ const ImgCarousel = ({ children, filteredProject, isTablet }: ImgCarouselProps) 
     setTextOffset((currentOffset) => {
       const newOffset = currentOffset - oneTextStep
       //@ts-ignore
-      const maxOffset = -(pageWidth * (children?.length - 1) - (isTablet ? 15 : 75 ))  
+      const maxOffset = -(pageWidth * (children?.length - 1) - (isTablet ? 15 : 77))
       return Math.max(newOffset, maxOffset)
     })
   }
@@ -94,16 +94,16 @@ const ImgCarousel = ({ children, filteredProject, isTablet }: ImgCarouselProps) 
           </a>
         </div>
       </div>
-          <TextCarousel offset={textOffset}>
-            {filteredProject?.images.map(img => (
-              <div key={img.id} className={cls.textCarouselComponent}>
-                <span className="font-bold text-[2.6rem]">{img.title}</span>
-                <p>
-                  {img.currentDescription}
-                </p>
-              </div>
-            ))}
-          </TextCarousel>
+      <TextCarousel offset={textOffset}>
+        {filteredProject?.images.map(img => (
+          <div key={img.id} className={cls.textCarouselComponent}>
+            <span className="font-bold text-[2.6rem]">{img.title}</span>
+            <p>
+              {img.currentDescription}
+            </p>
+          </div>
+        ))}
+      </TextCarousel>
     </div>
   )
 }

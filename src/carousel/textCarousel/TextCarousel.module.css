@@ -6,12 +6,12 @@
 .carouselContainer {
     max-width: 54rem;
     display: flex; 
-    /* gap: 2rem; */
 }
 
 .window {
     height: 100%;
     width: 100%;
+    padding: 1rem;
     overflow: hidden;
 }
 
