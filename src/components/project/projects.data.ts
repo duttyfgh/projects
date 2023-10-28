@@ -56,7 +56,7 @@ const projects: IProject[] = [
                   minus consequatur error, commodi porro? Laboriosam vero asperiores molestiae voluptate\
                   sequi! Voluptatem nam illum et laborum sapiente vero eos sequi tenetur, accusantium repellat\
                    sint sed optio soluta pariatur dolorem quod autem placeat perspiciatis ipsam veritatis reiciendis\
-                    repellendus! Dignissimos, qua'
+                    repellendus! Dignissimos, quare.'
             },
             {
                 url: phot3,
@@ -69,7 +69,9 @@ const projects: IProject[] = [
                 Ab, et! Minus doloribus dolore, nisi, facilis voluptatum omnis labore\
                  nemo optio inventore dolores soluta vel placeat. Nisi, distinctio modi.\
                   Suscipit libero fuga laboriosam quae incidunt, consequatur dolorum quidem\
-                   hic, pariatur, temporibus autem nobis '
+                   hic, pariatur, temporibus autem nobis nemo optio inventore dolores soluta vel placeat. Nisi, distinctio modi.\
+                   Suscipit libero fuga laboriosam quae incidunt, consequatur dolorum quidem\
+                    hic, pariatur, temporib. '
             }
         ],
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.\
