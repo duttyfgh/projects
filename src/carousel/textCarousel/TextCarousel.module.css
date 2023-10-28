@@ -6,7 +6,7 @@
 .carouselContainer {
     max-width: 54rem;
     display: flex; 
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 
 .window {

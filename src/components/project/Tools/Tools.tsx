@@ -12,15 +12,6 @@ interface ITools {
 const Tools = ({ tools }: ITools) => {
     return (
         <div className={cls.main}>
-            <Link to="/projects/" className={cls.arrow}>
-                <img
-                    src={back}
-                    alt="<- back"
-                    className='contoursReverse hover'
-                    title='<- Back'
-                />
-            </Link>
-
             <div className={cls.container}>
                 <div className="borderB w-[100%] mb-[1rem]">
                     <h1 className="text-[4rem]">Tools</h1>

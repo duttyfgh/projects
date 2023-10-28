@@ -4,13 +4,6 @@
     height: auto;
 }
 
-.arrow img {
-    width: 6rem;
-    cursor: pointer;
-    margin-top: 4rem;
-    margin-bottom: 8rem;
-}
-
 .container {
     display: flex;
     flex-direction: column;

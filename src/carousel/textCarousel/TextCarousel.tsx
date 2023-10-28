@@ -11,7 +11,7 @@ const TextCarousel = ({ children, offset }: ImgCarouselProps) => {
         <div className={cls.carousel}>
             <div className={cls.carouselContainer}>
                 <div className={`${cls.window}`}>
-                    <div className={`gap-[1rem] ${cls.allItems}`} style={{
+                    <div className={` ${cls.allItems}`} style={{
                         transform: `translateX(${offset}rem)`,
                     }}>
                         {children}
