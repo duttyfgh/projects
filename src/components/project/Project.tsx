@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { ThemeContext } from "../../context/Theme"
 import ProjectForDesktop from "./projectForDesktop/ProjectForDesktop"
 import ProjectForMobile from "./projectForMobile/ProjectForMobile"
