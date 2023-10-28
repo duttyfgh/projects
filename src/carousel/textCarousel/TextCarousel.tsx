@@ -1,4 +1,4 @@
-import { ReactNode, useState } from 'react'
+import { ReactNode } from 'react'
 import cls from './TextCarousel.module.css'
 
 interface ImgCarouselProps {

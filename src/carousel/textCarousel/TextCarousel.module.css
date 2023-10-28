@@ -1,15 +1,10 @@
 .carousel {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-left: 10rem;
-
+    justify-content: space-center;
 }
 
 .carouselContainer {
-    width: 90rem;
-    height: 50rem;
+    max-width: 54rem;
     display: flex; 
     gap: 2rem;
 }

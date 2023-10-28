@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef, useState } from "react"
 import { ThemeContext } from "../../context/Theme"
-import ProjectForDesktop from "./ProjectForDesktop"
-import ProjectForMobile from "./ProjectForMobile"
+import ProjectForDesktop from "./projectForDesktop/ProjectForDesktop"
+import ProjectForMobile from "./projectForMobile/ProjectForMobile"
 import projects, { IProject } from "./projects.data"
 
 const Project = () => {

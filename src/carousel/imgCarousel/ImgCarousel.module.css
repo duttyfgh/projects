@@ -1,0 +1,88 @@
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    margin-left: 10rem;
+
+}
+
+.carouselContainer {
+    width: 90rem;
+    height: 50rem;
+
+    display: flex;
+
+    gap: 2rem;
+}
+
+.window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.allItems {
+    height: 100%;
+    display: flex;
+    border-radius: 1.2rem;
+}
+
+.imgCarouselShell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arrow {
+    width: 3rem;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    gap: 8rem;
+    margin-top: 4rem;
+}
+
+.button {
+    border-radius: 1rem;
+
+    padding: 1.5rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+
+    font-size: 2.5rem;
+}
+
+.textCarouselComponent {
+    min-width: 100%;
+
+    font-size: 2.5rem;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media(max-width: 1024px) {
+    .carousel {
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 0;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .carouselContainer {
+        width: 60rem;
+        height: 30rem;
+        margin-bottom: 4rem;
+    }
+}
