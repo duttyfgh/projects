@@ -6,12 +6,14 @@ import projects, { IProject } from "./projects.data"
 
 const Project = () => {
   const [isTablet, setIsTablet] = useState(window.innerWidth < 1026)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 767)
   const [id, setId] = useState<string | null>('')
   const { handleCurrentProjectChange } = useContext(ThemeContext)
 
   const updateWindowWidth = () => {
     const newWidth = window.innerWidth
     setIsTablet(newWidth < 1026)
+    setIsMobile(newWidth < 767)
   }
 
   useEffect(() => {
@@ -44,6 +46,7 @@ const Project = () => {
     isTablet
       ? <ProjectForMobile
         filteredProject={filteredProject}
+        isMobile={isMobile}
       />
 
       : <ProjectForDesktop

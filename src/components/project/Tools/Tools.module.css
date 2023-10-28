@@ -59,3 +59,14 @@ div .tool {
         flex-wrap: wrap;
     }
 }
+
+@media(max-width: 767px) {
+
+    .main {
+        width: auto; 
+    }
+
+    .toolsContainer {
+        justify-content: center;
+    }
+}

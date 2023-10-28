@@ -35,3 +35,12 @@
 
     font-size: 2.5rem;
 }
+
+@media(max-width: 767px) {
+    .buttons {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+}

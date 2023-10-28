@@ -9,14 +9,15 @@ interface ImgCarouselProps {
   children: ReactNode,
   filteredProject: IProject | null,
   isTablet?: boolean
+  isMobile?: boolean
 }
 
-const ImgCarousel = ({ children, filteredProject, isTablet }: ImgCarouselProps) => {
+const ImgCarousel = ({ children, filteredProject, isTablet, isMobile }: ImgCarouselProps) => {
   const [offset, setOffset] = useState(0)
   const [textOffset, setTextOffset] = useState(0)
-  const PAGE_WIDTH = isTablet ? 60.3 : 90
-  const oneImgStep = isTablet ? 52 : 81.5
-  const oneTextStep = 53
+  const PAGE_WIDTH = isMobile ? 42.7 : (isTablet ? 60.3 : 90)
+  const oneImgStep = isMobile ? 34.3 : (isTablet ? 52 : 81.5)
+  const oneTextStep = isMobile ? 46.5 : 53
 
   const next = (pageWidth: number) => {
     //img carousel
@@ -31,7 +32,7 @@ const ImgCarousel = ({ children, filteredProject, isTablet }: ImgCarouselProps) 
     setTextOffset((currentOffset) => {
       const newOffset = currentOffset - oneTextStep
       //@ts-ignore
-      const maxOffset = -(pageWidth * (children?.length - 1) - (isTablet ? 15 : 77))
+      const maxOffset = -(pageWidth * (children?.length - 1) - isMobile ? 92.3 : (isTablet ? 15 : 77))
       return Math.max(newOffset, maxOffset)
     })
   }
@@ -94,6 +95,7 @@ const ImgCarousel = ({ children, filteredProject, isTablet }: ImgCarouselProps) 
           </a>
         </div>
       </div>
+
       <TextCarousel offset={textOffset}>
         {filteredProject?.images.map(img => (
           <div key={img.id} className={cls.textCarouselComponent}>
