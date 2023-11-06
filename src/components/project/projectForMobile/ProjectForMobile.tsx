@@ -45,14 +45,18 @@ const ProjectForMobile = ({ filteredProject, isMobile }: ProjectForMobileProps) 
                 <a
                     className={`reverse ${cls.button} hover`}
                     href={filteredProject?.url}
-                    title='Click to visit the site'>
+                    title='Click to visit the site'
+                    target='_blank'
+                >
                     Visit the site
                 </a>
 
                 <a
                     className={`border ${cls.button} hover`}
                     href={filteredProject?.githubUrl}
-                    title='Click to view code this site'>
+                    title='Click to view code this site'
+                    target='_blank'
+                >
                     See the code
                 </a>
             </div>

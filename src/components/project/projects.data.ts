@@ -1,6 +1,9 @@
-import photo from '../../assets/photo.png'
-import phot2 from '../../assets/photo2.png'
-import phot3 from '../../assets/photo3.png'
+//way-of-samurai
+import wayOfSamurai1 from '../../assets/way-of-samurai/itIncubator1.png'
+import wayOfSamurai11 from '../../assets/way-of-samurai/itIncubator1.1.png'
+import wayOfSamurai2 from '../../assets/way-of-samurai/itIncubator2.png'
+import wayOfSamurai3 from '../../assets/way-of-samurai/itIncubator3.png'
+import wayOfSamurai31 from '../../assets/way-of-samurai/itIncubator3.1.png'
 
 export interface IProject {
     name: string;
@@ -19,72 +22,76 @@ export interface IProject {
         name: string;
         img: string
     }[];
-    data: string;
+    date: string;
 }
 
 const projects: IProject[] = [
     {
-        name: 'name',
-        id: 'DFKGDFJL847348934DFDFdd',
-        url: 'https://www.randomUrl.com',
-        previewImg: phot2,
+        name: "React way of samurai",
+        id: "1REACT1WAY1OF1SAMURAI1",
+        url: "#",
+        previewImg: wayOfSamurai1,
+        description: 'This was the course that introduced me to reactJS. In this course,\
+         the topic of project architecture was revealed in great detail, here I got acquainted\
+          with such concepts as FLUX architecture and the first principle of SOLID, namely the\
+           principle of "single responsibility", also in it I got acquainted with OOP, HOK, HOOK,\
+            etc. Here I learned how to send requests to the server using the axios library and how\
+             to work with APIs and API Docs. This course is hosted on the "it-kamasutra" channel.\
+              Unfortunately, this course had a rather old approach, there were old libraries and no\
+               TS, and now such code is considered obsolete, but it gave me a very good base. I watch\
+               videos on this channel from time to time. Also, in this course, some attention was paid to Jest tests.',
+        githubUrl: "https://github.com/duttyfgh/react-way-of-samurai",
+        date: "06.04.2023",
         images: [
             {
-                url: photo,
-                title: 'image title',
-                id: '1212sdf3d3sdfS#1231312312312312123Q@#F(F',
-                currentDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.\
-                Ab, et! Minus doloribus dolore, nisi, facilis voluptatum omnis labore\
-                 nemo optio inventore dolores soluta vel placeat. Nisi, distinctio modi.\
-                  Suscipit libero fuga laboriosam quae incidunt, consequatur dolorum quidem\
-                   hic, pariatur, temporibus autem nobis a beatae ad blanditiis inventore est officiis.\
-                    In repudiandae optio atque eos accusamus placeat quo tempora molestiae sit voluptate\
-                     minus consequatur error, commodi porro? Laboriosam vero asperiores molestiae voluptate\
-                     sequi! Voluptatem nam illum et laborum sapiente vero eos sequi tenetur, accusantium repellat\
-                      sint sed optio soluta pariatur dolorem quod autem placeat perspiciatis ipsam veritatis reiciendis\
-                       repellendus! Dignissimos, quae.'
+                url: wayOfSamurai2,
+                title: "Login page",
+                id: "2LOGIN2PAGE2",
+                currentDescription: "When entering the site, if the user is not authorized,\
+                 he was redirected to the login panel, the API did not allow users to register\
+                  but allowed them to be authorized, registration was on the site 'https://social-network.samuraijs.com'.\
+                   Information about the user, that is, his ID, was stored in localStorage, and this is where I learned to\
+                    work with him."
             },
             {
-                url: phot2,
-                title: 'title343',
-                id: '1212sdf3qqqqqqqqqqqqqqqqqqqqqq',
-                currentDescription: 'Rnepudiandae optio atque eos accusamus placeat quo tempora molestiae sit voluptate\
-                minus consequatur error, commodi porro? Laboriosam vero asperiores molestiae voluptate\
-                sequi! Voluptatem nam illum et laborum sapiente vero eos sequi tenetur, accusantium repellat\
-                 sint sed optio soluta pariatur dolorem quod autem placeat perspiciatis ipsam veritatis reiciendis\
-                  repellendus! Dignissimos, quan repudiandae optio atque eos accusamus placeat quo tempora molestiae sit voluptate\
-                  minus consequatur error, commodi porro? Laboriosam vero asperiores molestiae voluptate\
-                  sequi! Voluptatem nam illum et laborum sapiente vero eos sequi tenetur, accusantium repellat\
-                   sint sed optio soluta pariatur dolorem quod autem placeat perspiciatis ipsam veritatis reiciendis\
-                    repellendus! Dignissimos, quare.'
+                url: wayOfSamurai1,
+                title: 'Profile page',
+                id: '1USER1PAGE1',
+                currentDescription: "Each user had a personal profile page that he could go to by\
+                 clicking on his nickname in the header. Here was the personal information of each user.\
+                  While creating this page, I learned how to get data from the server for a specific user.\
+                  In this course, less attention was paid to design, so it didn't turn out very well for me.",
             },
             {
-                url: phot3,
-                title: 'image title2',
-                id: '1212sdf3d3sdfS#D#@Q@#F(F0009112',
-                currentDescription: 'Rore dolores soluta vel placeat. Nisi, distinctio modi.\
-                Suscipit libero fuga laboriosam quae incidunt, consequatur dolorum quidem\
-                int sed optio soluta pariatur dolorem quod autem placeat perspiciatis ipsam veritatis reiciendis\
-                repellendus! Dignissimos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit.\
-                Ab, et! Minus doloribus dolore, nisi, facilis voluptatum omnis labore\
-                 nemo optio inventore dolores soluta vel placeat. Nisi, distinctio modi.\
-                  Suscipit libero fuga laboriosam quae incidunt, consequatur dolorum quidem\
-                   hic, pariatur, temporibus autem nobis nemo optio inventore dolores soluta vel placeat. Nisi, distinctio modi.\
-                   Suscipit libero fuga laboriosam quae incidunt, consequatur dolorum quidem\
-                    hic, pariatur, temporib. '
-            }
+                url: wayOfSamurai11,
+                title: "Edit profile",
+                id: "1.1EDIT1.1PROFILE1.1",
+                currentDescription: "Each user was able to change his page and change anything on it.\
+                 To switch to this mode, you had to press the button with a brush, I was not aware of\
+                  such a thing, there was a more demanding and boring approach, so I decided to do it\
+                   my way. While making this page, I learned how to validate forms (unfortunately, a very\
+                     old library was used that was written in OOP), and I also learned how to send POST and PUT requests.",
+
+            },
+            {
+                url: wayOfSamurai3,
+                title: "Users page",
+                id: "3USERS3PAGE3",
+                currentDescription: "This page displayed all users who registered on the website\
+                 'https://social-network.samuraijs.com' and displayed minimal information about\
+                  them, users could also be subscribed and unsubscribed. Here I learned how to do\
+                   pagination and add query parameters to a GET request.\
+                   Also, by clicking on a user, you went to his profile."
+            },
+            {
+                url: wayOfSamurai31,
+                title: "User page",
+                id: "3.1AUTHER3.1USER3.1",
+                currentDescription: "When going to the page of a specific user, all available information\
+                 about the user was displayed, it was impossible to change it as one's own."
+            },
         ],
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.\
-         Ab, et! Minus doloribus dolore, nisi, facilis voluptatum omnis labore\
-          nemo optio inventore dolores soluta vel placeat. Nisi, distinctio modi.\
-           Suscipit libero fuga laboriosam quae incidunt, consequatur dolorum quidem\
-            hic, pariatur, temporibus autem nobis a beatae ad blanditiis inventore est officiis.\
-             In repudiandae optio atque eos accusamus placeat quo tempora molestiae sit voluptate\
-              minus consequatur error, commodi porro? Laboriosam vero asperiores molestiae voluptate\
-              sequi! Voluptatem nam illum et laborum sapiente vero eos sequi tenetur, accusantium repellat\
-               sint sed optio soluta pariatur dolorem quod autem placeat perspiciatis ipsam veritatis reiciendis\
-                repellendus! Dignissimos, quae.',
-        githubUrl: 'url',
+
         tools: [
             {
                 name: 'react',
@@ -102,8 +109,23 @@ const projects: IProject[] = [
                 name: 'css',
                 img: 'https://skillicons.dev/icons?i=css',
             },
+            {
+                name: 'jest',
+                img: 'https://skillicons.dev/icons?i=jest'
+            },
+            {
+                name: 'redux',
+                img: 'https://skillicons.dev/icons?i=redux'
+            },
+            {
+                name: 'axios',
+                img: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/axios_logo_icon_168545.png'
+            },
+            {
+                name: 'git',
+                img: 'https://skillicons.dev/icons?i=git'
+            }
         ],
-        data: '18.10.2023'
 
     },
     {
@@ -145,7 +167,7 @@ const projects: IProject[] = [
                 img: 'https://skillicons.dev/icons?i=css',
             },
         ],
-        data: '18.10.2023'
+        date: '18.10.2023'
 
     },
     {
@@ -187,7 +209,7 @@ const projects: IProject[] = [
                 img: 'https://skillicons.dev/icons?i=css',
             },
         ],
-        data: '18.10.2023'
+        date: '18.10.2023'
 
     }
 ]

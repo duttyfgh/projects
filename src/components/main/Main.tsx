@@ -15,7 +15,7 @@ const Main = () => {
               <div className={`${cls.projectImage} bordeR`}>
                 <img src={project.previewImg} alt={project.name} className='hover' />
                 <span className={cls.projectDescription}>
-                  {project.data}
+                  {project.date}
                 </span>
               </div>
             </div>
