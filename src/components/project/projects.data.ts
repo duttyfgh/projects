@@ -5,6 +5,13 @@ import wayOfSamurai2 from '../../assets/way-of-samurai/itIncubator2.png'
 import wayOfSamurai3 from '../../assets/way-of-samurai/itIncubator3.png'
 import wayOfSamurai31 from '../../assets/way-of-samurai/itIncubator3.1.png'
 
+//kids-sport
+import kidsSports1 from '../../assets/kids-sport/kidsSports1.png'
+import kidsSports12 from '../../assets/kids-sport/kidsSports1.2.png'
+import kidsSports2 from '../../assets/kids-sport/kidsSports2.png'
+import kidsSports3 from '../../assets/kids-sport/kidsSports3.png'
+import kidsSports4 from '../../assets/kids-sport/kidsSports4.png'
+
 export interface IProject {
     name: string;
     id: string;
@@ -129,26 +136,80 @@ const projects: IProject[] = [
 
     },
     {
-        name: 'name2',
-        id: 'DFKGDFJL847348934DFD1Fdd2',
-        url: 'https://www.ranwomUrl.com',
-        previewImg: 'https://img.freepik.com/free-vector/business-teamwork-concept-teamwork-leadership-effort-hard-work-team-strategy-concept-of-brainstorm-at-workshop-management-skills-vector-cartoon-illustration-flat-design_1150-56223.jpg?w=1380&t=st=1697652837~exp=1697653437~hmac=1ede437ef61c21df7b9be8b0160d745ff10eaac0c557d7ec20557add8bdf0bc2',
+        name: "Kids sport cherkas",
+        id: "2KIDS2SPORT2CHERCAS2",
+        url: "https://duttyfgh.github.io/kids-sport-cherkas",
+        previewImg: kidsSports1,
+        description: "Hello, I made this website on request for my mom's\
+         acquaintance who was involved in youth sports. This site features news\
+          about youth sports in Cherkasy. For me, it was my first experience creating\
+           a custom website. At that time, there were many things I didn't know, but through\
+            this project, I learned, such as working with clients. I didn't just come up with\
+             this site out of my head; the client provided real tasks that I implemented. Currently,\
+              the site is unfinished, but both the back-end and front-end are written for it. Development\
+               has been halted due to a lack of funding. The site is fully responsive, adapted for various\
+                devices ranging from 1640px to 320px. I tried to write the code as cleanly as possible, using\
+                 the FLUX architecture, but at that time, my knowledge was insufficient to create a completely\
+                  correct architecture. Currently, the site has placeholder content unrelated to youth sports;\
+                   I added it just to see how it would look with real photos.",
+        githubUrl: "https://github.com/duttyfgh/kids-sport-cherkas/",
+        date: "26.05.2023",
         images: [
             {
-                url: 'sds',
-                title: 'image title',
-                id: '1212sdf3d3sdfS#D#@Q@#F(F',
-                currentDescription: 'currentDescription'
+                url: kidsSports1,
+                title: "Main page",
+                id: "1MAIN1PAGE1KIDS1SPORT1",
+                currentDescription: "This is the main page of the website, where the first prominent section\
+                 displays the four most relevant news articles. When a new article is added to the site, this\
+                  banner is updated to reflect the latest information. Clicking on any of these banners was intended\
+                   to redirect the user to the page featuring the respective news article. Unfortunately, I couldn't\
+                    implement this functionality because it required a deployed server, and there were no funds available\
+                     for the client to cover the cost."
             },
             {
-                url: 'image ur2l',
-                title: 'image title2',
-                id: '1212sdddf3d3sdfS#D#dfdQ@#F(F2',
-                currentDescription: 'currentDescription2'
-            }
+                url: kidsSports12,
+                title: "News in main page",
+                id: "1.2NEWS.1.2IN1.2MAIN1.2PAGE1.2KIDS1.2SPORT1.2",
+                currentDescription: 'Being on the main page and scrolling down, the user would come across the latest news.\
+                 The first and most prominent one was the most current news, containing more information such as the headline,\
+                  description, date, and a button to navigate to the full article. Further down were all the other news articles.\
+                   I implemented a safeguard so that if an admin adds a news article without a title or image, the title will change\
+                    to "None," and the image will be replaced with a placeholder featuring an empty picture. This was done in case an\
+                     admin adds a damaged image.',
+            },
+            {
+                url: kidsSports2,
+                title: "News page",
+                id: "2NEWS2KIDS2SPORT2",
+                currentDescription: `The "News" page is a feed of all the site's news. It was supposed to have\
+                 a search field for news articles, but this feature was not implemented because the server was not\
+                  deployed. Each news article had a "type" value, and they were sorted into pages such as "Football,"\
+                   "Basketball," etc., based on this value. However, there were also news articles here with all types\
+                    combined. In this section, only placeholders are displayed, not real news. Articles with a different\
+                     type, i.e., not football or basketball, did not have their own dedicated pages, so they were placed \
+                     on the "Other Sports" page.`
+            },
+            {
+                url: kidsSports3,
+                title: "About us page",
+                id: "3ABOUT3US3KIDS3SPORT3",
+                currentDescription: `The "About Us" page described the essence of the website. \
+                Pages like "Video" or "Contacts" were not created because the client was not very\
+                 involved in the development of this site. Instead of these pages, a temporary "404\
+                  error" page was displayed.`
+            },
+            {
+                url: kidsSports4,
+                title: "Admin page",
+                id: "4ADMIN4PAGE4KIDS4SPORT4",
+                currentDescription: "If you were an admin, upon accessing the admin page, buttons were displayed\
+                 allowing you to log out of the admin account or add a news article. The news article addition page\
+                  had a very simple validation because, at that time, I didn't know how to use Formik. Therefore, the\
+                   validation was only based on length. After adding a news article, it immediately became the most\
+                    current and was displayed as the first on the main page."
+            },
         ],
-        description: 'description description description description',
-        githubUrl: 'url',
+
         tools: [
             {
                 name: 'react',
@@ -166,9 +227,19 @@ const projects: IProject[] = [
                 name: 'css',
                 img: 'https://skillicons.dev/icons?i=css',
             },
+            {
+                name: 'ts',
+                img: 'https://skillicons.dev/icons?i=ts',
+            },
+            {
+                name: 'redux',
+                img: 'https://skillicons.dev/icons?i=redux',
+            },
+            {
+                name: 'git',
+                img: 'https://skillicons.dev/icons?i=git',
+            },
         ],
-        date: '18.10.2023'
-
     },
     {
         name: 'name3',
