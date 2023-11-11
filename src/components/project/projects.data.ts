@@ -43,7 +43,7 @@ const projects: IProject[] = [
     {
         name: "React way of samurai",
         id: "1REACT1WAY1OF1SAMURAI1",
-        url: "#",
+        url: "https://youtube.com/playlist?list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8&si=602IsCtOBkiQRqxl",
         previewImg: wayOfSamurai1,
         description: 'This was the course that introduced me to reactJS. In this course,\
          the topic of project architecture was revealed in great detail, here I got acquainted\
@@ -147,7 +147,7 @@ const projects: IProject[] = [
         id: "2KIDS2SPORT2CHERCAS2",
         url: "https://duttyfgh.github.io/kids-sport-cherkas",
         previewImg: kidsSports1,
-        description: "Hello, I made this website on request for my mom's\
+        description: "I made this website on request for my mom's\
          acquaintance who was involved in youth sports. This site features news\
           about youth sports in Cherkasy. For me, it was my first experience creating\
            a custom website. At that time, there were many things I didn't know, but through\
@@ -249,7 +249,6 @@ const projects: IProject[] = [
         ],
     },
     {
-
         name: "Github searcher",
         id: "3GITHUB3SEARCHER3",
         url: "https://duttyfgh.github.io/search-engine-for-github-repositories",
@@ -306,7 +305,6 @@ const projects: IProject[] = [
         },
 
         ],
-
         tools: [
             {
                 name: 'react',
@@ -323,6 +321,18 @@ const projects: IProject[] = [
             {
                 name: 'css',
                 img: 'https://skillicons.dev/icons?i=css',
+            },
+            {
+                name: 'rtk',
+                img: 'https://skillicons.dev/icons?i=redux',
+            },
+            {
+                name: 'git',
+                img: 'https://skillicons.dev/icons?i=git',
+            },
+            {
+                name: 'github',
+                img: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
             },
         ],
 
