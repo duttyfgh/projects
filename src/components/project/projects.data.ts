@@ -12,6 +12,13 @@ import kidsSports2 from '../../assets/kids-sport/kidsSports2.png'
 import kidsSports3 from '../../assets/kids-sport/kidsSports3.png'
 import kidsSports4 from '../../assets/kids-sport/kidsSports4.png'
 
+//github searcher
+import githubSearch from '../../assets/github-search/githubSearch.png'
+import githubSearch2 from '../../assets/github-search/githubSearch2.png'
+import githubSearch3 from '../../assets/github-search/githubSearch3.png'
+import githubSearch4 from '../../assets/github-search/githubSearch4.png'
+import githubSearch5 from '../../assets/github-search/githubSearch5.png'
+
 export interface IProject {
     name: string;
     id: string;
@@ -232,7 +239,7 @@ const projects: IProject[] = [
                 img: 'https://skillicons.dev/icons?i=ts',
             },
             {
-                name: 'redux',
+                name: 'rtk',
                 img: 'https://skillicons.dev/icons?i=redux',
             },
             {
@@ -242,26 +249,64 @@ const projects: IProject[] = [
         ],
     },
     {
-        name: 'name3',
-        id: 'DFKGDFJL847348934Dsdfsdfsdf12FDFdd3',
-        url: 'https://www.ranwomUrl.com',
-        previewImg: 'https://img.freepik.com/free-vector/hand-drawn-business-planning_23-2149150731.jpg?w=1380&t=st=1697652868~exp=1697653468~hmac=2315c471560741e1152634130ab5bbefc0c879b3f6c2e5c0e088db1d249299be',
+
+        name: "Github searcher",
+        id: "3GITHUB3SEARCHER3",
+        url: "https://duttyfgh.github.io/search-engine-for-github-repositories",
+        previewImg: githubSearch,
+        description: "This website is created for searching repositories by username on GitHub.\
+         I built this site following a tutorial on YouTube, and you can find the video here:\
+          https://youtu.be/lkbm-zlcFvs?si=KwRF7kr1vQEcSNUC. I developed this site about 4 times,\
+           and this was the last time I did it entirely on my own. Initially, I wanted to understand\
+            how it works, and then I reproduced my knowledge in this website.\
+            While creating the site, I learned to use Redux Toolkit Query, and I also dedicated some attention to\
+            creating custom hooks.Additionally, the site involves working with localStorage.The tutorial in the video\
+            showed a simpler version of the site, but I made it more complex for my own learning.The site is fully responsive\
+            for mobile devices.",
+        githubUrl: "https://github.com/duttyfgh/search-engine-for-github-repositories",
+        date: "06.06.2023",
         images: [
             {
-                url: 'sdsdfs',
-                title: 'image title',
-                id: '1212sdf3d3sdfS#D#@Q@#F(F',
-                currentDescription: 'currentDescription'
+                url: githubSearch,
+                title: "Main page",
+                id: "3MAIN3GITHUB3SEARCHER3",
+                currentDescription: 'The main page of the website was designed in a very minimalistic\
+                 style. The site has 2 pages, "Home" and "Favorites." Using react-router-dom and NavLink,\
+                  I made it so that it indicates which page the user is currently on.'
             },
             {
-                url: 'image ur2l',
-                title: 'image title2',
-                id: '1212sdf3d3sdfS#D#@Q@#F(F2',
-                currentDescription: 'currentDescription2'
-            }
+                url: githubSearch2,
+                title: "Live search",
+                id: "2SEARCH2GITHUB2SEARCHER2",
+                currentDescription: "When the user entered a GitHub nickname with at least 3 characters,\
+                 autosearch was triggered. Clicking on the user opened information about them, and the dropdown disappeared."
+            },
+            {
+                url: githubSearch3,
+                title: "User repositories ",
+                id: "3USER3GITHUB3SEARCHER3",
+                currentDescription: "When clicking on the user, a list of their repositories would open,\
+                 displaying information about each specific repository. Also, on the right side of each\
+                  repository card, there was a star. Clicking on the star added the repository to favorites.\
+                   If the star was already pressed, clicking on it removed the repository from the favorites list."
+            }, {
+                url: githubSearch4,
+                title: "Favourites page",
+                id: "4FAVOURITES4GITHUB4SEARCH4",
+                currentDescription: "The 'Favorites' page displayed the selected repositories. There was also\
+                 an option to remove a repository from favorites by clicking on the star. If the user had no\
+                  selected repositories, the message 'No items' was displayed. Selected repositories were stored\
+                   in localStorage. Additionally, clicking on a repository redirected the user to its GitHub page."
+            },
+            {
+            url: githubSearch5,
+            title: "Showing error",
+            id: "5ERROR5GITHUB5SEARCHER5",
+            currentDescription: 'Also, if the server issues an error, it will be displayed to the user as "Something went wrong...".'
+        },
+
         ],
-        description: 'description description description description',
-        githubUrl: 'url',
+
         tools: [
             {
                 name: 'react',
@@ -280,7 +325,7 @@ const projects: IProject[] = [
                 img: 'https://skillicons.dev/icons?i=css',
             },
         ],
-        date: '18.10.2023'
+
 
     }
 ]
