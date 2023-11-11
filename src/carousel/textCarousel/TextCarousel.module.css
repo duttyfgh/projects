@@ -4,15 +4,15 @@
 }
 
 .carouselContainer {
-    max-width: 54rem;
+    max-width: 48rem;
     display: flex; 
 }
 
 .window {
     height: 100%;
     width: 100%;
-    padding: 1rem;
     overflow: hidden;
+    margin: 1.5rem;
 }
 
 .allItems {
