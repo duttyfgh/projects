@@ -334,6 +334,10 @@ const projects: IProject[] = [
                 name: 'github',
                 img: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
             },
+            {
+                name: 'tailwind',
+                img: 'https://skillicons.dev/icons?i=tailwind',
+            },
         ],
 
 
