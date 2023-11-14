@@ -354,7 +354,7 @@ const projects: IProject[] = [
         id: "1CAT1MONEY1",
         url: "https://kot-money-com.vercel.app/",
         previewImg: catMoney1,
-        description: "Cat Money is a startup from Moldova where people can perform and post\
+        description: "Cat Money is a startup from Moldova, where people can perform and post\
          tasks related to promoting their businesses online. This was my first experience working in a team.\
           It was a commercial project, not an educational one, so I didn't learn anything new here.\
            Currently, development has been halted due to a lack of a designer. The website was not\
