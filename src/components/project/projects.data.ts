@@ -19,6 +19,13 @@ import githubSearch3 from '../../assets/github-search/githubSearch3.png'
 import githubSearch4 from '../../assets/github-search/githubSearch4.png'
 import githubSearch5 from '../../assets/github-search/githubSearch5.png'
 
+//cat money
+import catMoney1 from '../../assets/catMoney/catMoney1.png'
+import catMoney2 from '../../assets/catMoney/catMoney2.png'
+import catMoney3 from '../../assets/catMoney/catMoney3.png'
+import catMoney4 from '../../assets/catMoney/catMoney4.png'
+import catMoney5 from '../../assets/catMoney/catMoney5.png'
+
 export interface IProject {
     name: string;
     id: string;
@@ -298,11 +305,11 @@ const projects: IProject[] = [
                    in localStorage. Additionally, clicking on a repository redirected the user to its GitHub page."
             },
             {
-            url: githubSearch5,
-            title: "Showing error",
-            id: "5ERROR5GITHUB5SEARCHER5",
-            currentDescription: 'Also, if the server issues an error, it will be displayed to the user as "Something went wrong...".'
-        },
+                url: githubSearch5,
+                title: "Showing error",
+                id: "5ERROR5GITHUB5SEARCHER5",
+                currentDescription: 'Also, if the server issues an error, it will be displayed to the user as "Something went wrong...".'
+            },
 
         ],
         tools: [
@@ -341,6 +348,91 @@ const projects: IProject[] = [
         ],
 
 
+    },
+    {
+        name: "Cat Money",
+        id: "1CAT1MONEY1",
+        url: "https://kot-money-com.vercel.app/",
+        previewImg: catMoney1,
+        description: "Cat Money is a startup from Moldova where people can perform and post\
+         tasks related to promoting their businesses online. This was my first experience working in a team.\
+          It was a commercial project, not an educational one, so I didn't learn anything new here.\
+           Currently, development has been halted due to a lack of a designer. The website was not\
+            fully implemented for the same reason.\
+        I worked on the frontend based on the design from Figma and\
+         implemented user registration and login functionality.\
+            as well as handling user registration and login.",
+        githubUrl: "https://github.com/abubakrDevop/CatMoney",
+        date: "06.20.2023",
+        images: [
+            {
+                url: catMoney1,
+                title: "Main page",
+                id: "1CAT1MONEY1MAIN1",
+                currentDescription: "The main page of the website is fully responsive for all devices,\
+                 as is the entire site. The page features two buttons, although they currently lack functionality."
+            },
+            {
+                url: catMoney2,
+                title: "Login page",
+                id: "2CAT2MONEY2LOGIN2",
+                currentDescription: "The Login page, with all validation implemented using the Formik\
+                 and Yup libraries. After a successful login, the user was redirected to the main page\
+                  and instead of the 'Login' button in the header, there was a button to access the user's\
+                   personal profile. Currently, the server is not deployed, so registration is not possible upon visiting the site."
+            },
+            {
+                url: catMoney3,
+                title: "Forgot password page",
+                id: "3CAT3MANEY3EMAIL3SENDER3",
+                currentDescription: "During registration, if a user forgot their password,\
+                 there was an option to reset it. The password reset process consisted of two pages:\
+                  Email sender and Set new password. After successfully filling out these forms,\
+                   the user was automatically logged in with the new password and redirected to the homepage."
+            },
+            {
+                url: catMoney4,
+                title: "Register page",
+                id: "4CAT4MONEY4REGISTER4",
+                currentDescription: "Registration Page: It was not possible to register an account with a login that had already been registered. Additionally, Yup was used to validate and ensure the password was entered correctly."
+            },
+            {
+                url: catMoney5,
+                title: "Please register ",
+                id: "5PLEASE5REGISTER5CAT5MONEY",
+                currentDescription: "If a user was not registered and attempted to access a specific page, they were redirected to the 'Please register' page, indicating that access to the site was restricted for unregistered users. This page retained the old design, and if the project continues to develop, it will be updated."
+            },
+        ],
+        tools: [
+            {
+                name: 'react',
+                img: 'https://skillicons.dev/icons?i=react',
+            },
+            {
+                name: 'js',
+                img: 'https://skillicons.dev/icons?i=js',
+            },
+            {
+                name: 'html',
+                img: 'https://skillicons.dev/icons?i=html',
+            },
+            {
+                name: 'css',
+                img: 'https://skillicons.dev/icons?i=css',
+            },
+            {
+                name: 'scss',
+                img: 'https://skillicons.dev/icons?i=scss',
+            },
+            {
+                name: 'formik',
+                img: 'https://img.stackshare.io/service/8846/preview.png',
+            },
+            {
+                name: 'redux',
+                img: 'https://skillicons.dev/icons?i=redux',
+            },
+        ]
     }
 ]
 
