@@ -24,7 +24,7 @@ const Footer = () => {
     <footer className={`${cls.footer} borderT default`}>
       <span className={cls.mainText}>
         created and maintained •
-        <a href="#" className={cls.link} target='_blank'> dutyfgh</a>
+        <a href="https://github.com/duttyfgh" className={cls.link} target='_blank'> dutyfgh</a>
       </span>
       <div className={cls.icons}>
         {icons.map(icon => (
