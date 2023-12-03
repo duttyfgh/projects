@@ -23,9 +23,11 @@
     margin-right: 3rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 
-    border-radius: 1.5rem; 
-    width: 15rem;
+    border-radius: 1.5rem;
+    height: 50px;
 }
 
 
@@ -37,9 +39,15 @@ div .tool {
     font-size: 2.6rem;
 }
 
+.tools:hover {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    height: 80px;
+}
+
 @media(max-width: 1024px) {
     .main {
-        width: 58rem; 
+        width: 58rem;
     }
 
     .arrow {
@@ -58,12 +66,20 @@ div .tool {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .tools {
+        height: 65px;
+    }
+
+    .tools:hover {
+        height: 110px;
+    }
 }
 
 @media(max-width: 767px) {
 
     .main {
-        width: auto; 
+        width: auto;
     }
 
     .toolsContainer {

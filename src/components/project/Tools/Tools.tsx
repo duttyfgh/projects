@@ -17,7 +17,8 @@ const Tools = ({ tools }: ITools) => {
                     {
                         tools.map(tool => (
                             <div key={tool.name}
-                                className={`bordeR hover transitioon ${cls.tools}`}>
+                                className={`bordeR transitioon ${cls.tools}`}
+                                title={tool.name}>
                                 <img src={tool.img} alt={tool.name} className='w-[5rem] mt-[-2rem]' />
                                 <span className={`ml-[1rem] text-[3rem] ${cls.tool}`}>{tool.name}</span>
                             </div>

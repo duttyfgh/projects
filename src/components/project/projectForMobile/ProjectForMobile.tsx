@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import back from '../../../assets/back.png'
 import ImgCarousel from "../../../carousel/imgCarousel/ImgCarousel"
+import Links from "../Links/Links"
 import { IProject } from "../projects.data"
 import Tools from "../Tools/Tools"
 import cls from './ProjectForMobile.module.css'
@@ -22,13 +23,7 @@ const ProjectForMobile = ({ filteredProject, isMobile }: ProjectForMobileProps) 
                 />
             </Link>
 
-            <ImgCarousel filteredProject={filteredProject} isTablet={true} isMobile={isMobile}>
-                {filteredProject?.images.map(img => (
-                    <img key={img.id} src={img.url} alt={img.title} className={`rounded-2xl`} />
-                ))}
-            </ImgCarousel>
-
-            <div className="max-w-[55rem] p-[2rem]">
+            <div className="max-w-[55rem] p-[2rem] mb-[1rem]">
                 <div className="borderB  mb-[1rem]">
                     <span className="text-[3rem] w-[55rem]">
                         Description
@@ -38,6 +33,14 @@ const ProjectForMobile = ({ filteredProject, isMobile }: ProjectForMobileProps) 
                     {filteredProject?.description}
                 </p>
             </div>
+
+            <ImgCarousel filteredProject={filteredProject} isTablet={true} isMobile={isMobile}>
+                {filteredProject?.images.map(img => (
+                    <img key={img.id} src={img.url} alt={img.title} className={`rounded-2xl`} />
+                ))}
+            </ImgCarousel>
+
+
 
             <Tools tools={filteredProject?.tools || []} />
 
@@ -60,6 +63,8 @@ const ProjectForMobile = ({ filteredProject, isMobile }: ProjectForMobileProps) 
                     See the code
                 </a>
             </div>
+
+            <Links links={filteredProject?.links}/>
 
         </div>
     )

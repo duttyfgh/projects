@@ -26,6 +26,14 @@ import catMoney3 from '../../assets/catMoney/catMoney3.png'
 import catMoney4 from '../../assets/catMoney/catMoney4.png'
 import catMoney5 from '../../assets/catMoney/catMoney5.png'
 
+//next-project
+import nextproject from '../../assets/nextproject/nextproject.png'
+import nextproject2 from '../../assets/nextproject/nextproject2.png'
+import nextproject3 from '../../assets/nextproject/nextproject3.png'
+import nextproject4 from '../../assets/nextproject/nextproject4.png'
+import nextproject5 from '../../assets/nextproject/nextproject5.png'
+import figmaDesign from '../../assets/nextproject/figmaDesign.png'
+
 export interface IProject {
     name: string;
     id: string;
@@ -44,6 +52,13 @@ export interface IProject {
         img: string
     }[];
     date: string;
+    links?: [
+        {
+            name: string;
+            url: string;
+            img: string
+        }
+    ]
 }
 
 const projects: IProject[] = [
@@ -147,6 +162,13 @@ const projects: IProject[] = [
                 img: 'https://skillicons.dev/icons?i=git'
             }
         ],
+        links: [
+            {
+                name: 'Youtube: React way of samurai',
+                url: "https://www.youtube.com/watch?v=gb7gMluAeao&list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8",
+                img: 'https://i.ytimg.com/vi/gb7gMluAeao/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAqmCOY4eyRZmACbwJYJzkz9loZAg'
+            }
+        ]
 
     },
     {
@@ -261,8 +283,7 @@ const projects: IProject[] = [
         url: "https://duttyfgh.github.io/search-engine-for-github-repositories",
         previewImg: githubSearch,
         description: "This website is created for searching repositories by username on GitHub.\
-         I built this site following a tutorial on YouTube, and you can find the video here:\
-          https://youtu.be/lkbm-zlcFvs?si=KwRF7kr1vQEcSNUC. I developed this site about 4 times,\
+         I built this site following a tutorial on YouTube. I developed this site about 4 times,\
            and this was the last time I did it entirely on my own. Initially, I wanted to understand\
             how it works, and then I reproduced my knowledge in this website.\
             While creating the site, I learned to use Redux Toolkit Query, and I also dedicated some attention to\
@@ -346,6 +367,14 @@ const projects: IProject[] = [
                 img: 'https://skillicons.dev/icons?i=tailwind',
             },
         ],
+        links: [
+            {
+                name: 'React стек 2022. TypeScript, Redux Toolkit, RTKQuery, Tailwind',
+                img: 'https://i.ytimg.com/vi/lkbm-zlcFvs/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDb3sH1BkgOs0G9xD1SisXyDCpPzg',
+                url: 'https://www.youtube.com/watch?v=lkbm-zlcFvs&pp=ygVCUmVhY3Qg0YHRgtC10LogMjAyMi4gVHlwZVNjcmlwdCwgUmVkdXggVG9vbGtpdCwgUlRLUXVlcnksIFRhaWx3aW5k'
+            }
+            
+        ]
 
 
     },
@@ -432,6 +461,117 @@ const projects: IProject[] = [
                 name: 'redux',
                 img: 'https://skillicons.dev/icons?i=redux',
             },
+        ]
+    },
+    {
+        name: "next-project",
+        id: "5NEXT5PROJECT5",
+        url: "https://nextapp-one-puce.vercel.app/",
+        previewImg: nextproject,
+        description: `I created this project through a YouTube course,\
+          but I customized many aspects to suit my preferences. This website is built using\
+           Next.js 13 with app routing. For user authentication, I implemented Google Auth on this site.\
+            It's a full-stack app with a straightforward backend, although in most cases, I didn't memorize\
+             anything from the backend and simply rewrote the code. I also designed the site's adaptation in\
+              Figma at . `,
+        githubUrl: "https://github.com/duttyfgh/Advansed-next-project",
+        date: "27.08.2023 ",
+        images: [
+            {
+                url: nextproject,
+                title: "Main page",
+                id: "1MAIN1NEXT1PROJECT1",
+                currentDescription: "Головна сторінка трохи відрізняєтся дизайном від того дизайну\
+                 що був запропонований в відео. Був застосований useContext від React щоб зробити\
+                  перемикач тем(темна/світла). Якщо юзер на зареестрований то показуєтся іконка переходу\
+                   на реестрацію, або якщо зареестрований то показуется іконка для переходу на особистий акаунт."
+            },
+
+            {
+                url: nextproject2,
+                title: "Portfolio ",
+                id: "2PORTFOLIO2NEXT2PROJECT2",
+                currentDescription: "The portfolio page contained 3 links, and if you\
+                 click on one of them, the user will be redirected to a page that tells about\
+                  one of the topics chosen by the user. Here, nested routing was applied: portfolio/[id]."
+            },
+            {
+                url: nextproject3,
+                title: "Posts",
+                id: "3POST3NEXT3PROJECT3",
+                currentDescription: "The Posts page was a feed of posts added by users.\
+                 Clicking on any of the posts triggered an embedded routing [id]. This page,\
+                  along with several others that fetched data from the server, featured skeleton loading.\
+                   The page displayed all the information about the post."
+            },
+            {
+                url: nextproject4,
+                title: "Login page",
+                id: "4LOGIN4NEXT4PROJECT4",
+                currentDescription: "The login page authenticated users. Users could manually enter\
+                 their data or log in through Google. If the user did not have an account before, they\
+                  could register through the register page. After authentication or registration,\
+                   the user was redirected to their profile."
+            },
+            {
+                url: nextproject5,
+                title: "User profile",
+                id: "5USER5PROFILE5NEXT5PROJECT5",
+                currentDescription: "If a registered user navigates to their profile,\
+                they will land on a page where they can view their existing posts or create a new post.\
+                Clicking the 'Create new post' button opens a modal window with a form for creating a new post.\
+                Additionally, there was a 'Logout' button, clicking on which would log the user out."
+            },
+        ],
+        tools: [
+            {
+                name: 'React',
+                img: 'https://skillicons.dev/icons?i=react',
+            },
+            {
+                name: 'JS',
+                img: 'https://skillicons.dev/icons?i=js',
+            },
+            {
+                name: 'Html',
+                img: 'https://skillicons.dev/icons?i=html',
+            },
+            {
+                name: 'CSS',
+                img: 'https://skillicons.dev/icons?i=css',
+            },
+            {
+                name: 'NextJs',
+                img: 'https://skillicons.dev/icons?i=next',
+            },
+            {
+                name: 'Tailwind',
+                img: 'https://skillicons.dev/icons?i=tailwind',
+            },
+            {
+                name: 'Google auth',
+                img: 'https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg',
+            },
+            {
+                name: 'formik',
+                img: 'https://img.stackshare.io/service/8846/preview.png',
+            },
+            
+            
+
+        ],
+        links: [
+            {
+                name: 'Yourube: Новый Крутой Проект на...',
+                url: 'https://www.youtube.com/watch?v=EM8A1zYZuw4&pp=ygUMbmV4dCBwcm9qZWN0',
+                img: 'https://i.ytimg.com/vi/EM8A1zYZuw4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBC_f0OjDypnC2Zd0hkOkjx2F2GlQ'
+            },
+            //@ts-ignore
+            {
+                name: 'Figma design',
+                url: 'https://www.figma.com/file/Yc8PDOFHVqejZ4OWyFLIru/Untitled?type=design&node-id=0%3A1&mode=design&t=NyrXAY9VxETNVZo5-1',
+                img: figmaDesign
+            }
         ]
     }
 ]
