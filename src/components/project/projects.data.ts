@@ -130,35 +130,35 @@ const projects: IProject[] = [
 
         tools: [
             {
-                name: 'react',
+                name: 'React',
                 img: 'https://skillicons.dev/icons?i=react',
             },
             {
-                name: 'js',
+                name: 'JS',
                 img: 'https://skillicons.dev/icons?i=js',
             },
             {
-                name: 'html',
+                name: 'HTML',
                 img: 'https://skillicons.dev/icons?i=html',
             },
             {
-                name: 'css',
+                name: 'CSS',
                 img: 'https://skillicons.dev/icons?i=css',
             },
             {
-                name: 'jest',
+                name: 'Jest',
                 img: 'https://skillicons.dev/icons?i=jest'
             },
             {
-                name: 'redux',
+                name: 'Redux',
                 img: 'https://skillicons.dev/icons?i=redux'
             },
             {
-                name: 'axios',
+                name: 'Axios',
                 img: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/axios_logo_icon_168545.png'
             },
             {
-                name: 'git',
+                name: 'Git',
                 img: 'https://skillicons.dev/icons?i=git'
             }
         ],
@@ -248,31 +248,31 @@ const projects: IProject[] = [
 
         tools: [
             {
-                name: 'react',
+                name: 'React',
                 img: 'https://skillicons.dev/icons?i=react',
             },
             {
-                name: 'js',
+                name: 'JS',
                 img: 'https://skillicons.dev/icons?i=js',
             },
             {
-                name: 'html',
+                name: 'HTML',
                 img: 'https://skillicons.dev/icons?i=html',
             },
             {
-                name: 'css',
+                name: 'CSS',
                 img: 'https://skillicons.dev/icons?i=css',
             },
             {
-                name: 'ts',
+                name: 'TS',
                 img: 'https://skillicons.dev/icons?i=ts',
             },
             {
-                name: 'rtk',
+                name: 'RTK',
                 img: 'https://skillicons.dev/icons?i=redux',
             },
             {
-                name: 'git',
+                name: 'Git',
                 img: 'https://skillicons.dev/icons?i=git',
             },
         ],
@@ -335,35 +335,35 @@ const projects: IProject[] = [
         ],
         tools: [
             {
-                name: 'react',
+                name: 'React',
                 img: 'https://skillicons.dev/icons?i=react',
             },
             {
-                name: 'js',
+                name: 'JS',
                 img: 'https://skillicons.dev/icons?i=js',
             },
             {
-                name: 'html',
+                name: 'HTML',
                 img: 'https://skillicons.dev/icons?i=html',
             },
             {
-                name: 'css',
+                name: 'CSS',
                 img: 'https://skillicons.dev/icons?i=css',
             },
             {
-                name: 'rtk',
+                name: 'RTK',
                 img: 'https://skillicons.dev/icons?i=redux',
             },
             {
-                name: 'git',
+                name: 'Git',
                 img: 'https://skillicons.dev/icons?i=git',
             },
             {
-                name: 'github',
+                name: 'Github',
                 img: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
             },
             {
-                name: 'tailwind',
+                name: 'Tailwind',
                 img: 'https://skillicons.dev/icons?i=tailwind',
             },
         ],
@@ -434,31 +434,31 @@ const projects: IProject[] = [
         ],
         tools: [
             {
-                name: 'react',
+                name: 'React',
                 img: 'https://skillicons.dev/icons?i=react',
             },
             {
-                name: 'js',
+                name: 'JS',
                 img: 'https://skillicons.dev/icons?i=js',
             },
             {
-                name: 'html',
+                name: 'HTML',
                 img: 'https://skillicons.dev/icons?i=html',
             },
             {
-                name: 'css',
+                name: 'CSS',
                 img: 'https://skillicons.dev/icons?i=css',
             },
             {
-                name: 'scss',
+                name: 'SCSS',
                 img: 'https://skillicons.dev/icons?i=scss',
             },
             {
-                name: 'formik',
+                name: 'Formik',
                 img: 'https://img.stackshare.io/service/8846/preview.png',
             },
             {
-                name: 'redux',
+                name: 'Redux',
                 img: 'https://skillicons.dev/icons?i=redux',
             },
         ]
@@ -533,7 +533,7 @@ const projects: IProject[] = [
                 img: 'https://skillicons.dev/icons?i=js',
             },
             {
-                name: 'Html',
+                name: 'HTML',
                 img: 'https://skillicons.dev/icons?i=html',
             },
             {
@@ -541,7 +541,7 @@ const projects: IProject[] = [
                 img: 'https://skillicons.dev/icons?i=css',
             },
             {
-                name: 'NextJs',
+                name: 'NextJS',
                 img: 'https://skillicons.dev/icons?i=next',
             },
             {
@@ -549,11 +549,11 @@ const projects: IProject[] = [
                 img: 'https://skillicons.dev/icons?i=tailwind',
             },
             {
-                name: 'Google auth',
+                name: 'GoogleAuth',
                 img: 'https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg',
             },
             {
-                name: 'formik',
+                name: 'Formik',
                 img: 'https://img.stackshare.io/service/8846/preview.png',
             },
             

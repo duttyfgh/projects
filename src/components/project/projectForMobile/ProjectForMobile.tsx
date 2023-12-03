@@ -64,7 +64,9 @@ const ProjectForMobile = ({ filteredProject, isMobile }: ProjectForMobileProps) 
                 </a>
             </div>
 
-            <Links links={filteredProject?.links}/>
+            {
+                filteredProject?.links && <Links links={filteredProject?.links} />
+            }
 
         </div>
     )

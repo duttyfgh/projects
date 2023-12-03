@@ -3,6 +3,7 @@ import { IProject } from "../projects.data"
 import ImgCarousel from '../../../carousel/imgCarousel/ImgCarousel'
 import { Link } from "react-router-dom"
 import back from '../../../assets/back.png'
+import Links from "../Links/Links"
 
 interface ProjectForDesktopProps {
   filteredProject: IProject | null,
@@ -45,25 +46,9 @@ const ProjectForDesktop = ({ filteredProject }: ProjectForDesktopProps) => {
 
         <Tools tools={filteredProject?.tools || []} />
 
-        <div>
-          <div className="borderB">
-            <span className="text-[4rem]">Links</span>
-          </div>
-          <div className="flex gap-[2rem]">
-            {filteredProject?.links?.map(link => (
-              <div className="mt-[2rem] mb-[4rem]">
-                <a href={link.url} title='Click to follow the link' target='_blank'>
-                  <img 
-                  src={link.img} 
-                  alt={link.name} 
-                  className='rounded-3xl mb-[0.5rem] cursor-pointer hover w-[360px] h-[202px]' />
-                  <span className="text-[2.4rem]">{link.name}</span>
-                </a>
-              </div>
-            )
-            )}
-          </div>
-        </div>
+        {
+          filteredProject?.links && <Links links={filteredProject?.links} />
+        }
 
       </div>
     </>
