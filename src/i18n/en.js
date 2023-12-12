@@ -62,8 +62,8 @@ export const en = {
         "tools": "Tools",
         "links": "Links"
     },
-    "reverseFilter": "Projects from old to new",
-    "defaultFilter": "Projects from new to old",
+    "reverseFilter": "From old to new",
+    "defaultFilter": "From new to old",
     "footer": "created and maintained •",
     "footerTitle": "Found a bug? tell me:"
 }

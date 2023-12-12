@@ -61,8 +61,8 @@ export const ua = {
         "tools": "Технології",
         "links": "Посилання"
     },
-    "reverseFilter": "Проєкти від старих до нових",
-    "defaultFilter": "Проєкти від нових до старих",
+    "reverseFilter": "Від старих до нових",
+    "defaultFilter": "Від нових до старих",
     "footer": "Створено і підтримуєтся •",
     "footerTitle": "Знайшли баг? Роскажіть мені:"
 }
