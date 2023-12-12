@@ -22,8 +22,16 @@ const Header = () => {
 
   return (
     <header className={`${cls.header} borderB`}>
-      <span className={cls.mainText}>DMYTRO LAGODICH PROJECTS •{currentProject &&
-        <span className={`${cls.mainText} text-[#adadad] currentProject`}>{` ${currentProject}`}</span>}</span>
+
+      <span className={cls.mainText}>DMYTRO LAGODICH PROJECTS
+        {currentProject &&
+          <>
+             <span className={cls.mainText}> •</span>
+            <span className={`${cls.mainText} text-[#adadad] currentProject`}>{` ${currentProject}`}</span>
+          </>
+        }
+      </span>
+
       <div className={cls.buttons}>
         <Tippy content={`${mode === 'light' ? t('header.themeDark') : t('header.themeLight')}`}>
           <div

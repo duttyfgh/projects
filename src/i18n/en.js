@@ -1,4 +1,4 @@
-{
+ export const en = {
     "header": {
         "themeDark": "Set dark mode",
         "themeLight": "Set light mode"

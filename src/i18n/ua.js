@@ -1,4 +1,4 @@
-{
+export const ua = {
     "header": {
         "themeDark": "Встановити темну тему",
         "themeLight": "Встановити світлу тему"
