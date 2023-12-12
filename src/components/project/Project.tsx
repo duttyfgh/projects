@@ -7,8 +7,11 @@ import projects, { IProject } from "./projects.data"
 const Project = () => {
   const [isTablet, setIsTablet] = useState(window.innerWidth < 1026)
   const [isMobile, setIsMobile] = useState(window.innerWidth < 767)
+
   const [id, setId] = useState<string | null>('')
   const { handleCurrentProjectChange } = useContext(ThemeContext)
+
+  const [currentImageCounter, setCurrentImageCounter] = useState<number>(0)
 
   const updateWindowWidth = () => {
     const newWidth = window.innerWidth
@@ -41,6 +44,19 @@ const Project = () => {
   //set current project
   filteredProject?.name && handleCurrentProjectChange(filteredProject?.name)
 
+  const imageCounterPluser = () => {
+    if (currentImageCounter <= 3) {
+      setCurrentImageCounter(currentImageCounter + 1)
+    }
+
+  }
+
+  const imageCounterMinuser = () => {
+    if (currentImageCounter >= 1) {
+      setCurrentImageCounter(currentImageCounter - 1)
+    }
+  }
+
   return (
 
     isTablet
@@ -51,6 +67,9 @@ const Project = () => {
 
       : <ProjectForDesktop
         filteredProject={filteredProject}
+        imageCounterPluser={imageCounterPluser}
+        imageCounterMinuser={imageCounterMinuser}
+        currentImageCounter={currentImageCounter}
       />
 
   )

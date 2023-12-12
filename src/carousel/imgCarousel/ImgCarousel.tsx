@@ -11,13 +11,21 @@ interface ImgCarouselProps {
   filteredProject: IProject | null,
   isTablet?: boolean
   isMobile?: boolean
+  imageCounterPluser: () => void
+  imageCounterMinuser: () => void
 }
 
-const ImgCarousel = ({ children, filteredProject, isTablet, isMobile }: ImgCarouselProps) => {
+const ImgCarousel = ({ children,
+  filteredProject,
+  isTablet,
+  isMobile,
+  imageCounterPluser,
+  imageCounterMinuser
+}: ImgCarouselProps) => {
   const [offset, setOffset] = useState(0)
   const [textOffset, setTextOffset] = useState(0)
   const PAGE_WIDTH = isMobile ? 42.7 : (isTablet ? 60.4 : 90.2)
-  const oneImgStep = isMobile ? 34 : (isTablet ? 51.7 : 81.5)//52
+  const oneImgStep = isMobile ? 34 : (isTablet ? 51.7 : 81.5)
   const oneTextStep = 45
 
   const next = (pageWidth: number) => {
@@ -36,6 +44,8 @@ const ImgCarousel = ({ children, filteredProject, isTablet, isMobile }: ImgCarou
       const maxOffset = -(pageWidth * (children?.length - 1) - isMobile ? 180 : (isTablet ? 15 : 180))
       return Math.max(newOffset, maxOffset)
     })
+
+    imageCounterPluser()
   }
 
   const prev = () => {
@@ -50,6 +60,8 @@ const ImgCarousel = ({ children, filteredProject, isTablet, isMobile }: ImgCarou
       const newOffset = currentOffset + oneTextStep
       return Math.min(newOffset, 0)
     })
+
+    imageCounterMinuser()
   }
 
   const { t } = useTranslation()
@@ -85,7 +97,7 @@ const ImgCarousel = ({ children, filteredProject, isTablet, isMobile }: ImgCarou
             className={`reverse ${cls.button} hover`}
             href={filteredProject?.url}
             target='_blank'
-                        >
+          >
             {t('project.buttons.visit')}
           </a>
 
@@ -93,7 +105,7 @@ const ImgCarousel = ({ children, filteredProject, isTablet, isMobile }: ImgCarou
             className={`border ${cls.button} hover`}
             href={filteredProject?.githubUrl}
             target='_blank'
-            >
+          >
             {t('project.buttons.code')}
           </a>
         </div>
