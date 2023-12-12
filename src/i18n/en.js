@@ -1,4 +1,4 @@
- export const en = {
+export const en = {
     "header": {
         "themeDark": "Set dark mode",
         "themeLight": "Set light mode"
@@ -62,6 +62,8 @@
         "tools": "Tools",
         "links": "Links"
     },
+    "reverseFilter": "Projects from old to new",
+    "defaultFilter": "Projects from new to old",
     "footer": "created and maintained •",
     "footerTitle": "Found a bug? tell me:"
 }
