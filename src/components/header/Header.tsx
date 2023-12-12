@@ -1,7 +1,7 @@
 import sun from '../../assets/sun.png'
 import moon from '../../assets/moon.png'
 import globe from '../../assets/globe.png'
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { ThemeContext } from '../../context/Theme';
 import cls from './Header.module.css'
 import { useTranslation } from "react-i18next"
@@ -9,18 +9,15 @@ import Tippy from '@tippyjs/react';
 
 const Header = () => {
   const { toggle, mode, currentProject } = useContext(ThemeContext)
-  const [isDropdown, setIsDropdown] = useState<boolean>(false)
 
   const { i18n, t } = useTranslation()
 
   const setEnglishLanguage = () => {
     i18n.changeLanguage('en')
-    setIsDropdown(false)
   }
 
   const setUkrainianLanguage = () => {
     i18n.changeLanguage('ua')
-    setIsDropdown(false)
   }
 
   return (
