@@ -9,6 +9,7 @@
 
 .toolsContainer {
     display: flex;
+    gap: 1.5rem;
 }
 
 .tools {
@@ -18,9 +19,8 @@
 
     font-size: 3rem;
 
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
     margin-top: 1.5rem;
-    margin-right: 3rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 
@@ -28,19 +28,8 @@
     width: 15rem;
 }
 
-
-div .tool {
-    font-size: 0px;
-}
-
-.tools:hover .tool {
-    font-size: 2.6rem;
-}
-
 @media(max-width: 1024px) {
-    .main {
-        width: 58rem; 
-    }
+
 
     .arrow {
         display: none;

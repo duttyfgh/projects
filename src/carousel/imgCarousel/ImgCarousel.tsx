@@ -4,6 +4,7 @@ import arrowL from '../../assets/arrowL.png'
 import cls from './ImgCarousel.module.css'
 import { IProject } from "../../components/project/projects.data"
 import TextCarousel from "../textCarousel/TextCarousel"
+import { useTranslation } from "react-i18next"
 
 interface ImgCarouselProps {
   children: ReactNode,
@@ -51,6 +52,8 @@ const ImgCarousel = ({ children, filteredProject, isTablet, isMobile }: ImgCarou
     })
   }
 
+  const { t } = useTranslation()
+
   return (
     <div className={cls.carousel}>
       <div className={cls.imgCarouselShell}>
@@ -60,7 +63,6 @@ const ImgCarousel = ({ children, filteredProject, isTablet, isMobile }: ImgCarou
               src={arrowL}
               alt="<-"
               className={`contoursReverse hover ${cls.arrow}`}
-              title='<- Preview'
             />
           </button>
           <div className={`bordeR rounded-2xl ${cls.window}`}>
@@ -75,7 +77,6 @@ const ImgCarousel = ({ children, filteredProject, isTablet, isMobile }: ImgCarou
               src={arrowR}
               alt="->"
               className={`contoursReverse hover ${cls.arrow}`}
-              title='Next ->'
             />
           </button>
         </div>
@@ -83,19 +84,17 @@ const ImgCarousel = ({ children, filteredProject, isTablet, isMobile }: ImgCarou
           <a
             className={`reverse ${cls.button} hover`}
             href={filteredProject?.url}
-            title='Click to visit the site'
             target='_blank'
                         >
-            Visit the site
+            {t('project.buttons.visit')}
           </a>
 
           <a
             className={`border ${cls.button} hover`}
             href={filteredProject?.githubUrl}
-            title='Click to view code this site'
             target='_blank'
             >
-            See the code
+            {t('project.buttons.code')}
           </a>
         </div>
       </div>
@@ -105,7 +104,7 @@ const ImgCarousel = ({ children, filteredProject, isTablet, isMobile }: ImgCarou
           <div key={img.id} className={cls.textCarouselComponent}>
             <span className="font-bold text-[2.6rem]">{img.title}</span>
             <p>
-              {img.currentDescription}
+              {t(`project.${filteredProject?.name}.slider.${img.title}`)}
             </p>
           </div>
         ))}

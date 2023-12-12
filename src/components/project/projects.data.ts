@@ -310,7 +310,7 @@ const projects: IProject[] = [
             },
             {
                 url: githubSearch3,
-                title: "User repositories ",
+                title: "User repositories",
                 id: "3USER3GITHUB3SEARCHER3",
                 currentDescription: "When clicking on the user, a list of their repositories would open,\
                  displaying information about each specific repository. Also, on the right side of each\
@@ -318,7 +318,7 @@ const projects: IProject[] = [
                    If the star was already pressed, clicking on it removed the repository from the favorites list."
             }, {
                 url: githubSearch4,
-                title: "Favourites page",
+                title: "Favorites page",
                 id: "4FAVOURITES4GITHUB4SEARCH4",
                 currentDescription: "The 'Favorites' page displayed the selected repositories. There was also\
                  an option to remove a repository from favorites by clicking on the star. If the user had no\
@@ -427,7 +427,7 @@ const projects: IProject[] = [
             },
             {
                 url: catMoney5,
-                title: "Please register ",
+                title: "Please register",
                 id: "5PLEASE5REGISTER5CAT5MONEY",
                 currentDescription: "If a user was not registered and attempted to access a specific page, they were redirected to the 'Please register' page, indicating that access to the site was restricted for unregistered users. This page retained the old design, and if the project continues to develop, it will be updated."
             },
@@ -489,7 +489,7 @@ const projects: IProject[] = [
 
             {
                 url: nextproject2,
-                title: "Portfolio ",
+                title: "Portfolio",
                 id: "2PORTFOLIO2NEXT2PROJECT2",
                 currentDescription: "The portfolio page contained 3 links, and if you\
                  click on one of them, the user will be redirected to a page that tells about\
@@ -549,7 +549,7 @@ const projects: IProject[] = [
                 img: 'https://skillicons.dev/icons?i=tailwind',
             },
             {
-                name: 'GoogleAuth',
+                name: 'Google Auth',
                 img: 'https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg',
             },
             {
@@ -562,13 +562,13 @@ const projects: IProject[] = [
         ],
         links: [
             {
-                name: 'Yourube: Новый Крутой Проект на...',
+                name: 'Yourube: Новый Крутой Проект на Next 13.4 (React Js) #reactjs #nextjs #nextjs13',
                 url: 'https://www.youtube.com/watch?v=EM8A1zYZuw4&pp=ygUMbmV4dCBwcm9qZWN0',
                 img: 'https://i.ytimg.com/vi/EM8A1zYZuw4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBC_f0OjDypnC2Zd0hkOkjx2F2GlQ'
             },
             //@ts-ignore
             {
-                name: 'Figma design',
+                name: 'Figma: adapted design',
                 url: 'https://www.figma.com/file/Yc8PDOFHVqejZ4OWyFLIru/Untitled?type=design&node-id=0%3A1&mode=design&t=NyrXAY9VxETNVZo5-1',
                 img: figmaDesign
             }

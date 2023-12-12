@@ -113,10 +113,9 @@ html {
 /* полоса прокрутки (скроллбар) */
 ::-webkit-scrollbar {
   width: 1.5rem; /* ширина для вертикального скролла */
-  height: 8px; 
+  height: 8px;
   background-color: white;
 }
-
 
 ::-webkit-scrollbar-thumb {
   background-color: #1c1d2d;
@@ -126,6 +125,14 @@ html {
 }
 
 ::-webkit-scrollbar-button {
-display: none;
+  display: none;
 }
 
+.currentProject {
+  color: #adadad;
+}
+
+
+.light .currentProject {
+  color: #525252;
+}

@@ -36,6 +36,12 @@
     font-size: 2.5rem;
 }
 
+@media(max-width: 1024px) {
+    .projectForMobile {
+        padding: 4rem;
+    }
+}
+
 @media(max-width: 767px) {
     .buttons {
         flex-direction: column;

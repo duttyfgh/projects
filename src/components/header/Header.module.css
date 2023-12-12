@@ -46,7 +46,7 @@ div .moon:hover {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
     cursor: pointer;
-    width: 8rem;
+    width: 8.3rem;
     height: 4rem;
     border-radius: 4rem;
     padding: 0.6rem;
@@ -65,14 +65,36 @@ div .moon:hover {
     border-radius: 50%;
 }
 
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 @media(max-width: 1026px) {
     .mainText {
         max-width: 50rem;
     }
+
+    .buttons {
+        flex-direction: column;
+    }
 }
 
-@media(max-width: 750px) {
-    .mainText {
-        max-width: 25rem;
+@media(max-width: 767px) {
+
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: start;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 2rem;
+        padding-top: 3rem;
+        gap: 2rem;
+    }
+
+    .buttons {
+        flex-direction: row;
     }
 }

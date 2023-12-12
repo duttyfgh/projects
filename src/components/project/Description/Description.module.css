@@ -1,0 +1,33 @@
+.description {
+    margin-bottom: 6rem;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.text {
+    font-size: 2.2rem;
+    padding-top: 1rem;
+}
+
+@media(max-width: 767px) {
+    .description {
+        max-width: 55rem;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .title {
+        font-size: 3rem;
+
+    }
+
+    .description div {
+        margin-bottom: 1rem;
+    }
+
+    .text {
+        padding: 0;
+    }
+}

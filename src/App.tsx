@@ -3,19 +3,25 @@ import Footer from "./components/footer/Footer"
 import Header from "./components/header/Header"
 import Main from "./components/main/Main"
 import Project from "./components/project/Project"
+import { Suspense } from "react"
 
 const App = () => {
   return (
     <div className="default h-screen">
       <Header />
-
       <Routes>
         <Route path="/projects/" element={<Main />} />
         <Route path="/projects/proj/" element={<Project />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   )
 }
 
-export default App
+const WrappedApp = () => (
+  <Suspense fallback='...loading'>
+    <App />
+  </Suspense>
+)
+
+export default WrappedApp

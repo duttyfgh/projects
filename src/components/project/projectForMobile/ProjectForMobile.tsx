@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
 import back from '../../../assets/back.png'
 import ImgCarousel from "../../../carousel/imgCarousel/ImgCarousel"
+import Description from "../Description/Description"
 import Links from "../Links/Links"
 import { IProject } from "../projects.data"
 import Tools from "../Tools/Tools"
@@ -12,6 +14,9 @@ interface ProjectForMobileProps {
 }
 
 const ProjectForMobile = ({ filteredProject, isMobile }: ProjectForMobileProps) => {
+
+  const { t } = useTranslation()
+
     return (
         <div className={`default ${cls.projectForMobile}`}>
             <Link to="/projects/" className='w-[100%]'>
@@ -23,24 +28,13 @@ const ProjectForMobile = ({ filteredProject, isMobile }: ProjectForMobileProps) 
                 />
             </Link>
 
-            <div className="max-w-[55rem] p-[2rem] mb-[1rem]">
-                <div className="borderB  mb-[1rem]">
-                    <span className="text-[3rem] w-[55rem]">
-                        Description
-                    </span>
-                </div>
-                <p>
-                    {filteredProject?.description}
-                </p>
-            </div>
+            <Description title={t('project.desc')} description={t(`project.${filteredProject?.name}.description`)} />
 
             <ImgCarousel filteredProject={filteredProject} isTablet={true} isMobile={isMobile}>
                 {filteredProject?.images.map(img => (
                     <img key={img.id} src={img.url} alt={img.title} className={`rounded-2xl`} />
                 ))}
             </ImgCarousel>
-
-
 
             <Tools tools={filteredProject?.tools || []} />
 
@@ -51,7 +45,7 @@ const ProjectForMobile = ({ filteredProject, isMobile }: ProjectForMobileProps) 
                     title='Click to visit the site'
                     target='_blank'
                 >
-                    Visit the site
+                    {t('project.buttons.visit')}
                 </a>
 
                 <a
@@ -60,7 +54,7 @@ const ProjectForMobile = ({ filteredProject, isMobile }: ProjectForMobileProps) 
                     title='Click to view code this site'
                     target='_blank'
                 >
-                    See the code
+                    {t('project.buttons.code')}
                 </a>
             </div>
 

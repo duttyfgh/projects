@@ -4,11 +4,7 @@
     align-items: center;
 
     padding-top: 0rem;
-    padding-bottom: 4rem;
-    padding-left: 8rem;
-
-    height: 83vh;
-
+    padding-bottom: 8rem;
 }
 
 .mainShell {
@@ -16,13 +12,13 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 8rem;
+    padding-top: 6rem;
 }
 
 .projectContainer {
     border-radius: 2rem;
     overflow: hidden;
-    margin-top: 8rem;
-    margin-right: 8rem;
 }
 
 .projectName {
@@ -34,7 +30,6 @@
 }
 
 .projectImage {
-
     width: 50rem;
     height: 30rem;
 
@@ -67,12 +62,12 @@
     width: 100%;
 }
 
-@media(max-width: 1679px) {
+/* @media(max-width: 1479px) {
     .mainShell {
         width: 150rem;
     }
 
-}
+} */
 
 @media(max-width: 1366px) {
     .main {
@@ -91,8 +86,10 @@
         padding-left: 0;
     }
 
-    .projectContainer {
-        margin-right: 0;
+    .mainShell {
+        gap: 4rem;
+        padding-top: 4rem;
+
     }
 }
 
@@ -102,18 +99,17 @@
         align-items: start;
         padding-bottom: 4rem;
     }
-
+    
     .projectImage {
         width: 40rem;
         height: 25rem;
     }
-
+    
     .mainShell {
         padding: 0;
+        padding-top: 4rem;
+
     }
 
-    .projectContainer {
-        margin-top: 4.5rem;
-    }
 
 }
