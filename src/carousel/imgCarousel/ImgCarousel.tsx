@@ -26,7 +26,7 @@ const ImgCarousel = ({ children,
   const [textOffset, setTextOffset] = useState(0)
   const PAGE_WIDTH = isMobile ? 42.7 : (isTablet ? 60.4 : 90.2)
   const oneImgStep = isMobile ? 34 : (isTablet ? 51.7 : 81.5)
-  const oneTextStep = 45
+  const oneTextStep = isMobile ? 45 : (isTablet ? 57 : 45)//45 default, 57
 
   const next = (pageWidth: number) => {
     //img carousel
@@ -41,7 +41,7 @@ const ImgCarousel = ({ children,
     setTextOffset((currentOffset) => {
       const newOffset = currentOffset - oneTextStep
       //@ts-ignore
-      const maxOffset = -(pageWidth * (children?.length - 1) - isMobile ? 180 : (isTablet ? 15 : 180))
+      const maxOffset = -(pageWidth * (children?.length - 1) - (isMobile ? -9 :(isTablet ? 14 : 181)))
       return Math.max(newOffset, maxOffset)
     })
 

@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import Footer from "./components/footer/Footer"
 import Header from "./components/header/Header"
 import Main from "./components/main/Main"
-import Project from "./components/project/Project"
+import Project from "./components/project/ProjectWrapper"
 import { Suspense } from "react"
 
 const App = () => {
