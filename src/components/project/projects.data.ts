@@ -45,7 +45,6 @@ export interface IProject {
         id: string;
         currentDescription: string;
     }[];
-    description: string;
     githubUrl: string;
     tools: {
         name: string;
@@ -65,17 +64,8 @@ const projects: IProject[] = [
     {
         name: "React way of samurai",
         id: "1REACT1WAY1OF1SAMURAI1",
-        url: "https://youtube.com/playlist?list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8&si=602IsCtOBkiQRqxl",
+        url: "",
         previewImg: wayOfSamurai1,
-        description: 'This was the course that introduced me to reactJS. In this course,\
-         the topic of project architecture was revealed in great detail, here I got acquainted\
-          with such concepts as FLUX architecture and the first principle of SOLID, namely the\
-           principle of "single responsibility", also in it I got acquainted with OOP, HOK, HOOK,\
-            etc. Here I learned how to send requests to the server using the axios library and how\
-             to work with APIs and API Docs. This course is hosted on the "it-kamasutra" channel.\
-              Unfortunately, this course had a rather old approach, there were old libraries and no\
-               TS, and now such code is considered obsolete, but it gave me a very good base. I watch\
-               videos on this channel from time to time. Also, in this course, some attention was paid to Jest tests.',
         githubUrl: "https://github.com/duttyfgh/react-way-of-samurai",
         date: "06.04.2023",
         images: [
@@ -176,18 +166,6 @@ const projects: IProject[] = [
         id: "2KIDS2SPORT2CHERCAS2",
         url: "https://duttyfgh.github.io/kids-sport-cherkas",
         previewImg: kidsSports1,
-        description: "I made this website on request for my mom's\
-         acquaintance who was involved in youth sports. This site features news\
-          about youth sports in Cherkasy. For me, it was my first experience creating\
-           a custom website. At that time, there were many things I didn't know, but through\
-            this project, I learned, such as working with clients. I didn't just come up with\
-             this site out of my head; the client provided real tasks that I implemented. Currently,\
-              the site is unfinished, but both the back-end and front-end are written for it. Development\
-               has been halted due to a lack of funding. The site is fully responsive, adapted for various\
-                devices ranging from 1640px to 320px. I tried to write the code as cleanly as possible, using\
-                 the FLUX architecture, but at that time, my knowledge was insufficient to create a completely\
-                  correct architecture. Currently, the site has placeholder content unrelated to youth sports;\
-                   I added it just to see how it would look with real photos.",
         githubUrl: "https://github.com/duttyfgh/kids-sport-cherkas/",
         date: "26.05.2023",
         images: [
@@ -282,14 +260,6 @@ const projects: IProject[] = [
         id: "3GITHUB3SEARCHER3",
         url: "https://duttyfgh.github.io/search-engine-for-github-repositories",
         previewImg: githubSearch,
-        description: "This website is created for searching repositories by username on GitHub.\
-         I built this site following a tutorial on YouTube. I developed this site about 4 times,\
-           and this was the last time I did it entirely on my own. Initially, I wanted to understand\
-            how it works, and then I reproduced my knowledge in this website.\
-            While creating the site, I learned to use Redux Toolkit Query, and I also dedicated some attention to\
-            creating custom hooks.Additionally, the site involves working with localStorage.The tutorial in the video\
-            showed a simpler version of the site, but I made it more complex for my own learning.The site is fully responsive\
-            for mobile devices.",
         githubUrl: "https://github.com/duttyfgh/search-engine-for-github-repositories",
         date: "06.06.2023",
         images: [
@@ -373,24 +343,14 @@ const projects: IProject[] = [
                 img: 'https://i.ytimg.com/vi/lkbm-zlcFvs/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDb3sH1BkgOs0G9xD1SisXyDCpPzg',
                 url: 'https://www.youtube.com/watch?v=lkbm-zlcFvs&pp=ygVCUmVhY3Qg0YHRgtC10LogMjAyMi4gVHlwZVNjcmlwdCwgUmVkdXggVG9vbGtpdCwgUlRLUXVlcnksIFRhaWx3aW5k'
             }
-            
+
         ]
-
-
     },
     {
         name: "Cat Money",
         id: "1CAT1MONEY1",
         url: "https://kot-money-com.vercel.app/",
         previewImg: catMoney1,
-        description: "Cat Money is a startup from Moldova, where people can perform and post\
-         tasks related to promoting their businesses online. This was my first experience working in a team.\
-          It was a commercial project, not an educational one, so I didn't learn anything new here.\
-           Currently, development has been halted due to a lack of a designer. The website was not\
-            fully implemented for the same reason.\
-        I worked on the frontend based on the design from Figma and\
-         implemented user registration and login functionality.\
-            as well as handling user registration and login.",
         githubUrl: "https://github.com/abubakrDevop/CatMoney",
         date: "06.20.2023",
         images: [
@@ -468,12 +428,6 @@ const projects: IProject[] = [
         id: "5NEXT5PROJECT5",
         url: "https://nextapp-one-puce.vercel.app/",
         previewImg: nextproject,
-        description: `I created this project through a YouTube course,\
-          but I customized many aspects to suit my preferences. This website is built using\
-           Next.js 13 with app routing. For user authentication, I implemented Google Auth on this site.\
-            It's a full-stack app with a straightforward backend, although in most cases, I didn't memorize\
-             anything from the backend and simply rewrote the code. I also designed the site's adaptation in\
-              Figma at . `,
         githubUrl: "https://github.com/duttyfgh/Advansed-next-project",
         date: "27.08.2023 ",
         images: [
@@ -556,8 +510,8 @@ const projects: IProject[] = [
                 name: 'Formik',
                 img: 'https://img.stackshare.io/service/8846/preview.png',
             },
-            
-            
+
+
 
         ],
         links: [

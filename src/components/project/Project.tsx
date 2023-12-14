@@ -86,14 +86,14 @@ const ProjectForDesktop = ({
         {filteredProject?.links && <Links links={filteredProject?.links} />}
 
         <div className={cls.buttons}>
-          <a
+          {filteredProject?.url != "" && <a
             className={`reverse ${cls.button} hover`}
             href={filteredProject?.url}
             title='Click to visit the site'
             target='_blank'
           >
             {t('project.buttons.visit')}
-          </a>
+          </a>}
 
           <a
             className={`border ${cls.button} hover`}
