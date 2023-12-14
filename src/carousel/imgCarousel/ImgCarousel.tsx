@@ -77,7 +77,7 @@ const ImgCarousel = ({ children,
               className={`contoursReverse hover ${cls.arrow}`}
             />
           </button>
-          <div className={`bordeR rounded-2xl ${cls.window}`}>
+          <div className={`rounded-2xl ${cls.window}`}>
             <div className={`gap-[1rem] ${cls.allItems}`} style={{
               transform: `translateX(${offset}rem)`,
             }}>

@@ -51,7 +51,7 @@ const Main = () => {
               <div className={cls.projectName}>
                 {project.name}
               </div>
-              <div className={`${cls.projectImage} bordeR`}>
+              <div className={cls.projectImage}>
                 <img src={project.previewImg} alt={project.name} className='hover' />
                 <span className={cls.projectDescription}>
                   {project.date}
