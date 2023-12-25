@@ -23,6 +23,11 @@ const icons = [
     url: 'https://cdn3.iconfinder.com/data/icons/social-media-2253/25/Group-512.png',
     link: 'https://github.com/duttyfgh',
     title: 'Guthub: duttyfgh'
+  },
+  {
+    url: 'https://cdn.iconscout.com/icon/free/png-256/free-resume-1956282-1650445.png',
+    link: 'https://duttyfgh.github.io/cv/',
+    title: 'Resume'
   }
 ]
 
