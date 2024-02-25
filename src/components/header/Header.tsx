@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header className={`${cls.header} borderB`}>
 
-      <span className={cls.mainText}>DMYTRO LAGODICH PROJECTS
+      <span className={`${cls.mainText} headerText`}>DMYTRO LAGODICH PROJECTS
         {currentProject &&
           <>
              <span className={cls.mainText}> •</span>

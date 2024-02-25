@@ -2,30 +2,35 @@ import { useTranslation } from 'react-i18next'
 import cls from './Footer.module.scss'
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import inst from '../../assets/inst.svg' 
+import linkedIn from '../../assets/linkedIn.svg' 
+import tg from '../../assets/tg.svg' 
+import github from '../../assets/github.svg' 
+import portfolio from '../../assets/portfolio.png' 
 
 const icons = [
   {
-    url: 'https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Instagram.svg',
+    url: inst,
     link: 'https://www.instagram.com/dutyfgh/',
-    title: 'Instagram: dutyfgh'
+    title: 'dutyfgh'
   },
   {
-    url: 'https://cdn-icons-png.flaticon.com/512/3536/3536505.png ',
+    url: linkedIn,
     link: 'https://www.linkedin.com/in/dmytro-lagodich-756949275/',
-    title: 'Linkedin: Dmytro Lagodich'
+    title: 'Dmytro Lagodich'
   },
   {
-    url: 'https://cdn4.iconfinder.com/data/icons/socialcones/508/Telegram-512.png',
+    url: tg,
     link: 'https://t.me/dutyfgh',
-    title: 'Telegram: dutyfgh'
+    title: 'dutyfgh'
   },
   {
-    url: 'https://cdn3.iconfinder.com/data/icons/social-media-2253/25/Group-512.png',
+    url: github,
     link: 'https://github.com/duttyfgh',
-    title: 'Guthub: duttyfgh'
+    title: 'duttyfgh'
   },
   {
-    url: 'https://cdn.iconscout.com/icon/free/png-256/free-resume-1956282-1650445.png',
+    url: portfolio,
     link: 'https://duttyfgh.github.io/cv/',
     title: 'Resume'
   }
@@ -36,22 +41,23 @@ const Footer = () => {
   const { t } = useTranslation()
 
   return (
-    <footer className={`${cls.footer} borderT default`}>
-      <span className={cls.mainText}>
+    <footer className={`${cls.footer} footerBg`}>
+      <h1 className={cls.mainText} style={{color: '#d1dadd'}}>
         {t('footer')}
         <a
           href="https://github.com/duttyfgh"
           className={cls.link}
           target='_blank'> dutyfgh</a>
-      </span>
-      <span>{t('footerTitle')}</span>
+      </h1>
+      <h1 style={{color: '#d1dadd'}}>{t('footerTitle')}</h1>
       <div className={cls.icons}>
         {icons.map(icon => (
           <Tippy content={icon.title} key={icon.link}>
             <a
               href={icon.link}
-              target='_blank'>
-              <img src={icon.url} alt="..." className="w-[5rem] hover" />
+              target='_blank'
+              className='bordeR p-4 rounded-[50%] bg-white hover'>
+              <img src={icon.url} alt="..." className="w-[4.8rem] hover footerIcons" />
             </a>
           </Tippy>
         ))}

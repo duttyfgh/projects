@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+//general
+$darkBg: #162127;
 
 html {
   box-sizing: border-box;
@@ -20,8 +25,71 @@ html {
 
 * {
   font-size: 2rem;
+  transition: 0.2s ease-in-out;
 }
 
+.transitioon {
+  transition: 0.4s ease-out;
+}
+
+.hover:hover {
+  transform: scale(1.05);
+}
+
+//text
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #d1dadd;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #d1dadd;
+  font-size: 4rem;
+}
+
+.headerText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.dark .headerText {
+  color: #d1dadd;
+}
+
+.dark h2 {// I know that it's duplication of the code, but without it doesn't work😭
+  color: #d1dadd;
+}
+
+.light h1,
+h2,
+.headerText {
+  color: black;
+}
+
+.light p {
+  color: #474747;
+}
+
+.dark p {
+  color: #a8a8a8;
+}
+
+.currentProject {
+  color: #adadad;
+}
+
+.light .currentProject {
+  color: #525252;
+}
+
+
+//images filters
 .contours {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%)
     hue-rotate(181deg) brightness(102%) contrast(101%);
@@ -40,56 +108,46 @@ html {
     hue-rotate(181deg) brightness(102%) contrast(101%);
 }
 
+.light .footerIcons {
+  filter: brightness(0) saturate(100%)
+}
+
+//backgrounds
 .dark .default {
-  background-color: #1c1d2d;
+  background-color: $darkBg;
   color: white;
 }
 
 .dark .reverse {
   background-color: white;
-  color: #1c1d2d;
+  color: $darkBg;
 }
 
 .light .reverse {
   color: white;
-  background-color: #1c1d2d;
+  background-color: $darkBg;
 }
 
 .light .reverse {
   color: white;
-  background-color: #1c1d2d;
+  background-color: $darkBg;
 }
 
-* {
-  transition: 0.2s ease-in-out;
+.dark .footerBg {
+  background-color: #0c1418;
 }
 
+.light .footerBg {
+  background-color: black;
+}
+
+//borders
 .bordeR {
   border: 1px solid #cecece;
 }
 
 .dark .bordeR {
   border: 1px solid white;
-}
-
-.transitioon {
-  transition: 0.4s ease-out;
-}
-
-.hover:hover {
-  transform: scale(1.05);
-}
-
-.light p {
-  color: #474747;
-}
-
-.dark p {
-  color: #a8a8a8;
-}
-
-.test::-webkit-scrollbar {
-  display: none;
 }
 
 .borderB {
@@ -108,15 +166,19 @@ html {
   border-top: 1px solid #474747;
 }
 
-/* полоса прокрутки (скроллбар) */
+//scroll
+.test::-webkit-scrollbar {
+  display: none;
+}
+
 ::-webkit-scrollbar {
-  width: 1.5rem; /* ширина для вертикального скролла */
+  width: 1.5rem;
   height: 8px;
   background-color: white;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #1c1d2d;
+  background-color: $darkBg;
   border: 1px solid #292b3f;
   border-radius: 0.8rem;
   width: 0.5rem;
@@ -124,13 +186,4 @@ html {
 
 ::-webkit-scrollbar-button {
   display: none;
-}
-
-.currentProject {
-  color: #adadad;
-}
-
-
-.light .currentProject {
-  color: #525252;
 }

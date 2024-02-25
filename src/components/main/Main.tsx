@@ -49,7 +49,7 @@ const Main = () => {
           <Link key={project.id} to={`proj/?project=${project.id}`}>
             <div className={cls.projectContainer}>
               <div className={cls.projectName}>
-                {project.name}
+                <h1>{project.name}</h1>
               </div>
               <div className={cls.projectImage}>
                 <img src={project.previewImg} alt={project.name} className='hover' />

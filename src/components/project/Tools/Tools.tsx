@@ -15,7 +15,7 @@ const Tools = ({ tools }: ITools) => {
     return (
         <div className={cls.main}>
             <div className="borderB w-[100%] mb-[1rem]">
-                <h1 className="text-[4rem]">{t('project.tools')}</h1>
+                <h2 className="text-[4rem]">{t('project.tools')}</h2>
             </div>
             <div className={cls.toolsContainer}>
                 {

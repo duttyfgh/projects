@@ -114,7 +114,7 @@ const ImgCarousel = ({ children,
       <TextCarousel offset={textOffset}>
         {filteredProject?.images.map(img => (
           <div key={img.id} className={cls.textCarouselComponent}>
-            <span className="font-bold text-[2.6rem]">{img.title}</span>
+            <h2 className="text-[2.6rem]">{img.title}</h2>
             <p>
               {t(`project.${filteredProject?.name}.slider.${img.title}`)}
             </p>

@@ -9,9 +9,9 @@ const Description = ({ description, title }: DescriptionProps) => {
     return (
         <div className={cls.description}>
             <div className="borderB">
-                <span className="text-[4rem]">
+                <h2>
                     {title}
-                </span>
+                </h2>
             </div>
             <p className={cls.text}>
                 {description}

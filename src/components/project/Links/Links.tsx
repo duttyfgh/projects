@@ -19,7 +19,7 @@ const Links = ({ links }: LinksProps) => {
     return (
         <div className="w-[100%]">
             <div className="borderB">
-                <span className="text-[4rem]">{t('project.links')}</span>
+                <h2 className="text-[4rem]">{t('project.links')}</h2>
             </div>
             <div className="flex gap-[2rem] mt-[2rem] mb-[4rem] flex-wrap">
                 {links?.map(link => (
