@@ -6,6 +6,16 @@ import Tippy from '@tippyjs/react'
 import defaultFilter from '../../assets/defaultFilter.png'
 import reverseFilter from '../../assets/reverseFilter.png'
 import { useTranslation } from 'react-i18next'
+import { Variants, motion } from 'framer-motion'
+
+const appearingOfProjectCard: Variants = {
+  hidden: {
+    opacity: 0
+  },
+  visible: {
+    opacity: 1
+  }
+}
 
 const Main = () => {
   const [projectForMap, setProjectForMap] = useState<IProject[]>(projects.slice().reverse())
@@ -28,7 +38,7 @@ const Main = () => {
       <div className={`flex justify-end w-[100%] pt-[2rem] px-[4rem]  ${cls.projectReverserShell}`}>
         {
           isReverseFilter
-            ? <Tippy content={t('reverseFilter')} className='hover '>
+            ? <Tippy content={t('reverseFilter')} className='hover'>
               <div
                 className='px-[1rem] py-[1.5rem] rounded-[1rem] reverse hover z-10 cursor-pointer'
                 onClick={defaultProjectsHandler}>
@@ -45,10 +55,10 @@ const Main = () => {
         }
       </div>
 
-      <div className={cls.mainShell}>
+      <motion.div className={cls.mainShell} initial='hidden' animate='visible'>
         {projectForMap.map((project) => (
-          <Link key={project.id} to={`proj/?project=${project.id}`}>
-            <div className={cls.projectContainer}>
+          <Link key={project.id} to={`proj/?project=${project.id}`} >
+            <motion.div className={cls.projectContainer} variants={appearingOfProjectCard}>
               <div className={cls.projectName}>
                 <h1>{project.name}</h1>
               </div>
@@ -58,10 +68,10 @@ const Main = () => {
                   {project.date}
                 </span>
               </div>
-            </div>
+            </motion.div>
           </Link>
         ))}
-      </div>
+      </motion.div>
     </main>
 
   )
