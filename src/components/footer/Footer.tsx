@@ -57,7 +57,7 @@ const Footer = () => {
               href={icon.link}
               target='_blank'
               className='bordeR p-4 rounded-[50%] bg-white hover'>
-              <img src={icon.url} alt="..." className="w-[4.8rem] hover footerIcons" />
+              <img src={icon.url} alt="..." className="w-[4.8rem] hover" />
             </a>
           </Tippy>
         ))}

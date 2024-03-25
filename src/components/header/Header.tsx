@@ -6,6 +6,7 @@ import { ThemeContext } from '../../context/Theme';
 import cls from './Header.module.css'
 import { useTranslation } from "react-i18next"
 import Tippy from '@tippyjs/react';
+import { motion } from 'framer-motion'
 
 const Header = () => {
   const { toggle, mode, currentProject } = useContext(ThemeContext)
@@ -23,14 +24,17 @@ const Header = () => {
   return (
     <header className={`${cls.header} borderB`}>
 
-      <span className={`${cls.mainText} headerText`}>DMYTRO LAGODICH PROJECTS
-        {currentProject &&
-          <>
-             <span className={cls.mainText}> •</span>
-            <span className={`${cls.mainText} text-[#adadad] currentProject`}>{` ${currentProject}`}</span>
-          </>
-        }
-      </span>
+      <motion.span 
+      className={`${cls.mainText} headerText`}
+      initial={{x: -700, opacity: 0}}
+      animate={{x: 0, opacity: 1}}
+      >DMYTRO LAGODICH PROJECTS</motion.span>
+      {currentProject &&
+        <>
+          <span className={cls.mainText}> •</span>
+          <span className={`${cls.mainText} text-[#adadad] currentProject`}>{` ${currentProject}`}</span>
+        </>
+      }
 
       <div className={cls.buttons}>
         <Tippy content={`${mode === 'light' ? t('header.themeDark') : t('header.themeLight')}`}>

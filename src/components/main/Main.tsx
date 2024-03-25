@@ -25,10 +25,10 @@ const Main = () => {
 
   return (
     <main className={`${cls.main} default`}>
-      <div className={`flex justify-end w-[100%] pt-[2rem] px-[4rem] ${cls.projectReverserShell}`}>
+      <div className={`flex justify-end w-[100%] pt-[2rem] px-[4rem]  ${cls.projectReverserShell}`}>
         {
           isReverseFilter
-            ? <Tippy content={t('reverseFilter')} className='hover'>
+            ? <Tippy content={t('reverseFilter')} className='hover '>
               <div
                 className='px-[1rem] py-[1.5rem] rounded-[1rem] reverse hover z-10 cursor-pointer'
                 onClick={defaultProjectsHandler}>
@@ -44,6 +44,7 @@ const Main = () => {
             </Tippy>
         }
       </div>
+
       <div className={cls.mainShell}>
         {projectForMap.map((project) => (
           <Link key={project.id} to={`proj/?project=${project.id}`}>
@@ -61,7 +62,6 @@ const Main = () => {
           </Link>
         ))}
       </div>
-
     </main>
 
   )
