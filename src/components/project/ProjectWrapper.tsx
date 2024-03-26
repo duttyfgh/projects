@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import { ThemeContext } from "../../context/Theme"
 import ProjectForDesktop from "./Project"
 import projects, { IProject } from "./projects.data"
+import {motion} from 'framer-motion'
 
 const Project = () => {
   const [isTablet, setIsTablet] = useState(window.innerWidth < 1026)
@@ -35,7 +36,7 @@ const Project = () => {
 
   //filter
   const filterProjectsById = (projects: IProject[]): IProject | null => {
-    const filteredProjects = projects.filter((project) => project.id === id)
+    const filteredProjects = projects.filter((project) => project.id.toString() === id)
     return filteredProjects.length > 0 ? filteredProjects[0] : null
   }
   const filteredProject = filterProjectsById(projects)
@@ -58,14 +59,19 @@ const Project = () => {
 
   return (
 
-    <ProjectForDesktop
-      filteredProject={filteredProject}
-      imageCounterPluser={imageCounterPluser}
-      imageCounterMinuser={imageCounterMinuser}
-      currentImageCounter={currentImageCounter}
-      isTablet={isTablet}
-      isMobile={isMobile}
-    />
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth, transition: {duration: .2} }}>
+      <ProjectForDesktop
+        filteredProject={filteredProject}
+        imageCounterPluser={imageCounterPluser}
+        imageCounterMinuser={imageCounterMinuser}
+        currentImageCounter={currentImageCounter}
+        isTablet={isTablet}
+        isMobile={isMobile}
+      />
+    </motion.div>
 
   )
 }

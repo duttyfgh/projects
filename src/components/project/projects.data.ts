@@ -36,7 +36,7 @@ import figmaDesign from '../../assets/nextproject/figmaDesign.png'
 
 export interface IProject {
     name: string;
-    id: string;
+    id: number;
     url: string;
     previewImg: string;
     images: {
@@ -48,7 +48,8 @@ export interface IProject {
     githubUrl: string;
     tools: {
         name: string;
-        img: string
+        img: string;
+        id: number
     }[];
     date: string;
     links?: [
@@ -63,7 +64,7 @@ export interface IProject {
 const projects: IProject[] = [
     {
         name: "React way of samurai",
-        id: "1REACT1WAY1OF1SAMURAI1",
+        id: 5,
         url: "",
         previewImg: wayOfSamurai1,
         githubUrl: "https://github.com/duttyfgh/react-way-of-samurai",
@@ -122,34 +123,42 @@ const projects: IProject[] = [
             {
                 name: 'React',
                 img: 'https://skillicons.dev/icons?i=react',
+                id: 1
             },
             {
                 name: 'JS',
                 img: 'https://skillicons.dev/icons?i=js',
+                id: 2
             },
             {
                 name: 'HTML',
                 img: 'https://skillicons.dev/icons?i=html',
+                id: 3
             },
             {
                 name: 'CSS',
                 img: 'https://skillicons.dev/icons?i=css',
+                id: 4
             },
             {
                 name: 'Jest',
-                img: 'https://skillicons.dev/icons?i=jest'
+                img: 'https://skillicons.dev/icons?i=jest',
+                id: 5
             },
             {
                 name: 'Redux',
-                img: 'https://skillicons.dev/icons?i=redux'
+                img: 'https://skillicons.dev/icons?i=redux',
+                id: 6
             },
             {
                 name: 'Axios',
-                img: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/axios_logo_icon_168545.png'
+                img: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/axios_logo_icon_168545.png',
+                id: 7
             },
             {
                 name: 'Git',
-                img: 'https://skillicons.dev/icons?i=git'
+                img: 'https://skillicons.dev/icons?i=git',
+                id: 8
             }
         ],
         links: [
@@ -163,7 +172,7 @@ const projects: IProject[] = [
     },
     {
         name: "Kids sport cherkas",
-        id: "2KIDS2SPORT2CHERCAS2",
+        id: 4,
         url: "https://duttyfgh.github.io/kids-sport-cherkas",
         previewImg: kidsSports1,
         githubUrl: "https://github.com/duttyfgh/kids-sport-cherkas/",
@@ -228,36 +237,43 @@ const projects: IProject[] = [
             {
                 name: 'React',
                 img: 'https://skillicons.dev/icons?i=react',
+                id: 1
             },
             {
                 name: 'JS',
                 img: 'https://skillicons.dev/icons?i=js',
+                id: 2
             },
             {
                 name: 'HTML',
                 img: 'https://skillicons.dev/icons?i=html',
+                id: 3
             },
             {
                 name: 'CSS',
                 img: 'https://skillicons.dev/icons?i=css',
+                id: 4
             },
             {
                 name: 'TS',
                 img: 'https://skillicons.dev/icons?i=ts',
+                id: 5
             },
             {
                 name: 'RTK',
                 img: 'https://skillicons.dev/icons?i=redux',
+                id: 6
             },
             {
                 name: 'Git',
                 img: 'https://skillicons.dev/icons?i=git',
+                id: 7
             },
         ],
     },
     {
         name: "Github searcher",
-        id: "3GITHUB3SEARCHER3",
+        id: 3,
         url: "https://duttyfgh.github.io/search-engine-for-github-repositories",
         previewImg: githubSearch,
         githubUrl: "https://github.com/duttyfgh/search-engine-for-github-repositories",
@@ -307,34 +323,42 @@ const projects: IProject[] = [
             {
                 name: 'React',
                 img: 'https://skillicons.dev/icons?i=react',
+                id: 1
             },
             {
                 name: 'JS',
                 img: 'https://skillicons.dev/icons?i=js',
+                id: 2
             },
             {
                 name: 'HTML',
                 img: 'https://skillicons.dev/icons?i=html',
+                id: 3
             },
             {
                 name: 'CSS',
                 img: 'https://skillicons.dev/icons?i=css',
+                id: 4
             },
             {
                 name: 'RTK',
                 img: 'https://skillicons.dev/icons?i=redux',
+                id: 5
             },
             {
                 name: 'Git',
                 img: 'https://skillicons.dev/icons?i=git',
+                id: 6
             },
             {
                 name: 'Github',
                 img: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+                id: 7
             },
             {
                 name: 'Tailwind',
                 img: 'https://skillicons.dev/icons?i=tailwind',
+                id: 8
             },
         ],
         links: [
@@ -348,7 +372,7 @@ const projects: IProject[] = [
     },
     {
         name: "Cat Money",
-        id: "1CAT1MONEY1",
+        id: 2,
         url: "https://kot-money-com.vercel.app/",
         previewImg: catMoney1,
         githubUrl: "https://github.com/abubakrDevop/CatMoney",
@@ -396,36 +420,43 @@ const projects: IProject[] = [
             {
                 name: 'React',
                 img: 'https://skillicons.dev/icons?i=react',
+                id: 1
             },
             {
                 name: 'JS',
                 img: 'https://skillicons.dev/icons?i=js',
+                id: 2
             },
             {
                 name: 'HTML',
                 img: 'https://skillicons.dev/icons?i=html',
+                id: 3
             },
             {
                 name: 'CSS',
                 img: 'https://skillicons.dev/icons?i=css',
+                id: 4
             },
             {
                 name: 'SCSS',
                 img: 'https://skillicons.dev/icons?i=scss',
+                id: 5
             },
             {
                 name: 'Formik',
                 img: 'https://img.stackshare.io/service/8846/preview.png',
+                id: 6
             },
             {
                 name: 'Redux',
                 img: 'https://skillicons.dev/icons?i=redux',
+                id: 7
             },
         ]
     },
     {
         name: "next-project",
-        id: "5NEXT5PROJECT5",
+        id: 1,
         url: "https://nextapp-one-puce.vercel.app/",
         previewImg: nextproject,
         githubUrl: "https://github.com/duttyfgh/Advansed-next-project",
@@ -481,34 +512,42 @@ const projects: IProject[] = [
             {
                 name: 'React',
                 img: 'https://skillicons.dev/icons?i=react',
+                id: 1
             },
             {
                 name: 'JS',
                 img: 'https://skillicons.dev/icons?i=js',
+                id: 2
             },
             {
                 name: 'HTML',
                 img: 'https://skillicons.dev/icons?i=html',
+                id: 3
             },
             {
                 name: 'CSS',
                 img: 'https://skillicons.dev/icons?i=css',
+                id: 4
             },
             {
                 name: 'NextJS',
                 img: 'https://skillicons.dev/icons?i=next',
+                id: 5
             },
             {
                 name: 'Tailwind',
                 img: 'https://skillicons.dev/icons?i=tailwind',
+                id: 6
             },
             {
                 name: 'Google Auth',
                 img: 'https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg',
+                id: 7
             },
             {
                 name: 'Formik',
                 img: 'https://img.stackshare.io/service/8846/preview.png',
+                id: 8
             },
 
 

@@ -8,6 +8,17 @@ import { useTranslation } from "react-i18next"
 import Tippy from '@tippyjs/react';
 import { motion } from 'framer-motion'
 
+const headerTextAnimation = {
+  hidden: {
+    x: -700,
+    opacity: 0
+  },
+  visible: {
+    x: 0,
+    opacity: 1
+  }
+}
+
 const Header = () => {
   const { toggle, mode, currentProject } = useContext(ThemeContext)
 
@@ -24,17 +35,19 @@ const Header = () => {
   return (
     <header className={`${cls.header} borderB`}>
 
-      <motion.span 
-      className={`${cls.mainText} headerText`}
-      initial={{x: -700, opacity: 0}}
-      animate={{x: 0, opacity: 1}}
-      >DMYTRO LAGODICH PROJECTS</motion.span>
-      {currentProject &&
-        <>
-          <span className={cls.mainText}> •</span>
-          <span className={`${cls.mainText} text-[#adadad] currentProject`}>{` ${currentProject}`}</span>
-        </>
-      }
+      <motion.span
+        className={`${cls.mainText} headerText`}
+        initial='hidden'
+        animate='visible'
+        variants={headerTextAnimation}
+      >DMYTRO LAGODICH PROJECTS
+        {currentProject &&
+          <>
+            <span className={cls.mainText}> •</span>
+            <span className={`${cls.mainText} text-[#adadad] currentProject`}>{` ${currentProject}`}</span>
+          </>
+        }
+      </motion.span>
 
       <div className={cls.buttons}>
         <Tippy content={`${mode === 'light' ? t('header.themeDark') : t('header.themeLight')}`}>

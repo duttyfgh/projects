@@ -12,9 +12,10 @@ const appearingOfProjectCard: Variants = {
   hidden: {
     opacity: 0
   },
-  visible: {
-    opacity: 1
-  }
+  visible: custom => ({
+    opacity: 1,
+    transition: { duration: .7, delay: custom/10 }
+  })
 }
 
 const Main = () => {
@@ -34,7 +35,11 @@ const Main = () => {
   const { t } = useTranslation()
 
   return (
-    <main className={`${cls.main} default`}>
+    <motion.main
+     className={`${cls.main} default`}
+     initial={{width: '-100%'}}
+     animate={{width: '100%'}}
+     exit={{x: -window.innerWidth, transition: {duration: .2}}}>
       <div className={`flex justify-end w-[100%] pt-[2rem] px-[4rem]  ${cls.projectReverserShell}`}>
         {
           isReverseFilter
@@ -58,7 +63,7 @@ const Main = () => {
       <motion.div className={cls.mainShell} initial='hidden' animate='visible'>
         {projectForMap.map((project) => (
           <Link key={project.id} to={`proj/?project=${project.id}`} >
-            <motion.div className={cls.projectContainer} variants={appearingOfProjectCard}>
+            <motion.div className={cls.projectContainer} variants={appearingOfProjectCard} custom={project.id}>
               <div className={cls.projectName}>
                 <h1>{project.name}</h1>
               </div>
@@ -72,7 +77,7 @@ const Main = () => {
           </Link>
         ))}
       </motion.div>
-    </main>
+    </motion.main>
 
   )
 }
