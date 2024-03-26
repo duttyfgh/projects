@@ -29,7 +29,7 @@ const Links = ({ links }: LinksProps) => {
                                 <img
                                     src={link.img}
                                     alt={link.name}
-                                    className='rounded-3xl mb-[0.5rem] cursor-pointer hover w-[360px] h-[202px] object-cover' />
+                                    className='rounded-3xl mb-[0.5rem] cursor-pointer hover w-[360px] h-[202px] object-cover t' />
                                 <span className="lg:hidden">{link.name}</span>
                             </a>
                         </Tippy>

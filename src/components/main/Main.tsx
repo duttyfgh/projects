@@ -39,7 +39,7 @@ const Main = () => {
      className={`${cls.main} default`}
      initial={{width: '-100%'}}
      animate={{width: '100%'}}
-     exit={{x: -window.innerWidth, transition: {duration: .2, ease: 'easeIn'} }}>
+     exit={{x: -window.innerWidth, transition: {duration: .2} }}>
       <div className={`flex justify-end w-[100%] pt-[2rem] px-[4rem]  ${cls.projectReverserShell}`}>
         {
           isReverseFilter

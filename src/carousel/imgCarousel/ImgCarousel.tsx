@@ -94,7 +94,7 @@ const ImgCarousel = ({ children,
         </div>
         <div className={cls.buttons}>
           <a
-            className={`reverse ${cls.button} hover`}
+            className={`reverse ${cls.button} hover t`}
             href={filteredProject?.url}
             target='_blank'
           >
@@ -102,7 +102,7 @@ const ImgCarousel = ({ children,
           </a>
 
           <a
-            className={`border ${cls.button} hover`}
+            className={`border ${cls.button} hover t`}
             href={filteredProject?.githubUrl}
             target='_blank'
           >

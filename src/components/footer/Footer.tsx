@@ -78,7 +78,7 @@ const Footer = () => {
               className='bordeR p-4 rounded-[50%] bg-white hover'
               variants={appearingOfIcons}
               custom={icon.id}>
-              <img src={icon.url} alt="..." className="w-[4.8rem] hover" />
+              <img src={icon.url} alt="..." className="w-[4.8rem] hover t" />
             </motion.a>
           </Tippy>
         ))}

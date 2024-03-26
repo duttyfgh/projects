@@ -25,6 +25,9 @@ html {
 
 * {
   font-size: 2rem;
+}
+
+.t {
   transition: 0.2s ease-in-out;
 }
 
@@ -34,6 +37,16 @@ html {
 
 .hover:hover {
   transform: scale(1.05);
+}
+
+
+.reverse {
+  transition: 0.2s ease-in-out;
+}
+
+
+.contoursReverse {
+  transition: 0.2s ease-in-out;
 }
 
 //text
