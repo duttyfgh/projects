@@ -34,6 +34,25 @@ import nextproject4 from '../../assets/nextproject/nextproject4.png'
 import nextproject5 from '../../assets/nextproject/nextproject5.png'
 import figmaDesign from '../../assets/nextproject/figmaDesign.png'
 
+//doulingo clone
+import doulingo1 from '../../assets/doulingo-clone/doulingo1.png'
+import doulingo2 from '../../assets/doulingo-clone/doulingo2.png'
+import doulingo3 from '../../assets/doulingo-clone/doulingo3.png'
+import doulingo4 from '../../assets/doulingo-clone/doulingo4.png'
+import doulingo5 from '../../assets/doulingo-clone/doulingo5.png'
+
+//life in weeks
+import lifeInWeeks1 from '../../assets/life-in-weeks/lifeInWeeks1.png'
+import lifeInWeeks2 from '../../assets/life-in-weeks/lifeInWeeks2.png'
+import lifeInWeeks3 from '../../assets/life-in-weeks/lifeInWeeks3.png'
+import lifeInWeeks4 from '../../assets/life-in-weeks/lifeInWeeks4.png'
+import lifeInWeeks5 from '../../assets/life-in-weeks/lifeInWeeks5.png'
+
+//tools
+import clerk from '../../assets/clerk.png'
+import drizzle from '../../assets/drizzle.png'
+import lucide from '../../assets/lucide.png'
+
 export interface IProject {
     name: string;
     id: number;
@@ -64,7 +83,7 @@ export interface IProject {
 const projects: IProject[] = [
     {
         name: "React way of samurai",
-        id: 5,
+        id: 7,
         url: "",
         previewImg: wayOfSamurai1,
         githubUrl: "https://github.com/duttyfgh/react-way-of-samurai",
@@ -172,7 +191,7 @@ const projects: IProject[] = [
     },
     {
         name: "Kids sport cherkas",
-        id: 4,
+        id: 6,
         url: "https://duttyfgh.github.io/kids-sport-cherkas",
         previewImg: kidsSports1,
         githubUrl: "https://github.com/duttyfgh/kids-sport-cherkas/",
@@ -273,7 +292,7 @@ const projects: IProject[] = [
     },
     {
         name: "Github searcher",
-        id: 3,
+        id: 5,
         url: "https://duttyfgh.github.io/search-engine-for-github-repositories",
         previewImg: githubSearch,
         githubUrl: "https://github.com/duttyfgh/search-engine-for-github-repositories",
@@ -351,7 +370,7 @@ const projects: IProject[] = [
                 id: 6
             },
             {
-                name: 'Github',
+                name: 'Github API',
                 img: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
                 id: 7
             },
@@ -372,11 +391,11 @@ const projects: IProject[] = [
     },
     {
         name: "Cat Money",
-        id: 2,
+        id: 4,
         url: "https://kot-money-com.vercel.app/",
         previewImg: catMoney1,
         githubUrl: "https://github.com/abubakrDevop/CatMoney",
-        date: "06.20.2023",
+        date: "20.06.2023",
         images: [
             {
                 url: catMoney1,
@@ -452,11 +471,16 @@ const projects: IProject[] = [
                 img: 'https://skillicons.dev/icons?i=redux',
                 id: 7
             },
+            {
+                name: 'Git',
+                img: 'https://skillicons.dev/icons?i=git',
+                id: 8
+            },
         ]
     },
     {
         name: "next-project",
-        id: 1,
+        id: 3,
         url: "https://nextapp-one-puce.vercel.app/",
         previewImg: nextproject,
         githubUrl: "https://github.com/duttyfgh/Advansed-next-project",
@@ -549,7 +573,11 @@ const projects: IProject[] = [
                 img: 'https://img.stackshare.io/service/8846/preview.png',
                 id: 8
             },
-
+            {
+                name: 'Git',
+                img: 'https://skillicons.dev/icons?i=git',
+                id: 9
+            },
 
 
         ],
@@ -566,7 +594,199 @@ const projects: IProject[] = [
                 img: figmaDesign
             }
         ]
-    }
+    },
+    {
+        name: "Life in weeks",
+        id: 2,
+        url: "https://duttyfgh.github.io/life-in-weeks/",
+        previewImg: lifeInWeeks1,
+        githubUrl: "https://github.com/duttyfgh/life-in-weeks",
+        date: "31.03.2024",
+        images: [
+            {
+                url: lifeInWeeks1,
+                title: "Life in weeks",
+                id: "1LIFEINWEEKS1STORY1",
+                currentDescription: ""
+            },
+            {
+                url: lifeInWeeks2,
+                title: "Choise your date of born",
+                id: "2LIFEINWEEKS2CHOISE2YOUR2AGE2",
+                currentDescription: ""
+            },
+            {
+                url: lifeInWeeks3,
+                title: "Main page",
+                id: "3LIFEINWEEKS3MAIN3PAGE3",
+                currentDescription: ""
+            },
+            {
+                url: lifeInWeeks4,
+                title: "Life schema",
+                id: "4LIFEINWEEKS4LIFE4SCHEMA4",
+                currentDescription: ""
+            },
+            {
+                url: lifeInWeeks5,
+                title: "Mobile version",
+                id: "5LIFEINWEEKS5MOBILE5VERSION5",
+                currentDescription: ""
+            },
+        ],
+        tools: [
+            {
+                name: 'React',
+                img: 'https://skillicons.dev/icons?i=react',
+                id: 1
+            },
+            {
+                name: 'JS',
+                img: 'https://skillicons.dev/icons?i=js',
+                id: 2
+            },
+            {
+                name: 'HTML',
+                img: 'https://skillicons.dev/icons?i=html',
+                id: 3
+            },
+            {
+                name: 'CSS',
+                img: 'https://skillicons.dev/icons?i=css',
+                id: 4
+            },
+            {
+                name: 'Git',
+                img: 'https://skillicons.dev/icons?i=git',
+                id: 5
+            },
+            {
+                name: 'Tailwind',
+                img: 'https://skillicons.dev/icons?i=tailwind',
+                id: 6
+            },
+            
+        ]
+    },
+    {
+        name: "Doulingo clone",
+        id: 1,
+        url: "https://doulingo-clone-five.vercel.app/",
+        previewImg: doulingo1,
+        githubUrl: "https://github.com/duttyfgh/doulingo-clone",
+        date: "09.04.2024",
+        images: [
+            {
+                url: doulingo1,
+                title: "Marketing page",
+                id: "1MRKETING1PAGE1DOULINGO1CLONE1",
+                currentDescription: ""
+            },
+            {
+                url: doulingo2,
+                title: "Learn page",
+                id: "2LEARN2PAGE2DOULINGO2CLONE2",
+                currentDescription: ""
+            },
+            {
+                url: doulingo3,
+                title: "Guidebook page",
+                id: "3GUIDEBOOK3PAGE3DOULINGO3CLONE3",
+                currentDescription: ""
+            },
+            {
+                url: doulingo4,
+                title: "Lesson page",
+                id: "4LESSON4PAGE4DOULINGO4CLONE4",
+                currentDescription: ""
+            },
+            {
+                url: doulingo5,
+                title: "Subscription",
+                id: "4SUBSCRIPTION4DOULINGO4CLONE4",
+                currentDescription: ""
+            },
+        ],
+        tools: [
+            {
+                name: 'React',
+                img: 'https://skillicons.dev/icons?i=react',
+                id: 1
+            },
+            {
+                name: 'JS',
+                img: 'https://skillicons.dev/icons?i=js',
+                id: 2
+            },
+            {
+                name: 'HTML',
+                img: 'https://skillicons.dev/icons?i=html',
+                id: 3
+            },
+            {
+                name: 'CSS',
+                img: 'https://skillicons.dev/icons?i=css',
+                id: 4
+            },
+            {
+                name: 'NextJS',
+                img: 'https://skillicons.dev/icons?i=next',
+                id: 5
+            },
+            {
+                name: 'Tailwind',
+                img: 'https://skillicons.dev/icons?i=tailwind',
+                id: 6
+            },
+            {
+                name: 'Clerk',
+                img: clerk,
+                id: 7
+            },
+            {
+                name: 'Neon DB',
+                img: 'https://neon.tech/favicon/favicon.png',
+                id: 8
+            },
+            {
+                name: 'Drizzle',
+                img: drizzle,
+                id: 9
+            },
+            {
+                name: 'Framer motion',
+                img: 'https://latitudetechnolabs.com/wp-content/uploads/2022/01/framer-motion-4.png',
+                id: 10
+            },
+            {
+                name: 'Lucide react',
+                img: lucide,
+                id: 11
+            },
+            {
+                name: 'Stripe',
+                img: 'https://cdn.iconscout.com/icon/free/png-256/free-stripe-2-498440.png?f=webp&w=256',
+                id: 12
+            },
+            {
+                name: 'Git',
+                img: 'https://skillicons.dev/icons?i=git',
+                id: 13
+            },
+
+
+
+        ],
+        links: [
+            {
+                name: 'Build a Duolingo Clone With Nextjs, React, Drizzle, Stripe (2024)',
+                url: 'https://www.youtube.com/watch?v=dP75Khfy4s4&list=LL&index=34',
+                img: 'https://i.ytimg.com/vi/dP75Khfy4s4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBiguUo8LoRfOxoUxt5iOwObN1Iqg'
+            },
+
+        ]
+    },
+    
 ]
 
 export default projects

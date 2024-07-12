@@ -55,6 +55,27 @@ export const en = {
                 "User profile": "If a registered user navigates to their profile, they will land on a page where they can view their existing posts or create a new post. Clicking the 'Create new post' button opens a modal window with a form for creating a new post. Additionally, there was a 'Logout' button, clicking on which would log the user out."
             }
         },
+        'Doulingo clone': {
+            "description": "On this site, I tried to recreate the Duolingo website where users can learn different languages using a very simple learning system. I created it by watching a video tutorial on YouTube. This project significantly improved my English because I watched the video in English without subtitles. This site is a full-stack project where I used Next Routes and Drizzle ORM to create the back-end part, meaning all the site's data comes from a database. I also added the ability to subscribe monthly using Stripe. Currently, this site is a beta version that can be developed into a larger-scale project if desired. It is also fully adapted for all devices. I completed registration and authorization on the site using Clerk.",
+            'slider': {
+                'Marketing page': 'The welcome page greets users who have just entered the site. Here, you can register and then proceed to the main part of the site.',
+                'Learn page': 'Learn page - the main page of the site where users can enter a lesson and start learning or go to the guidebook and review words. On the right, there are promo banners containing useful information about the site, which are different for each page in the sidebar.',
+                'Guidebook page': 'The page where users can see which words will be in the unit; the words are unique for each unit. I implemented word playback using the react-use library.',
+                'Lesson page': "This is the page where users choose the correct answers to learn the material from the guidebook page. There are two types of tasks: selecting by picture and remembering the translation, and then a more challenging one - selecting the correct word without a picture.",
+                'Subscription': 'By going to the shop page, the user could click the "unlimited hearts" button, which would take them to the Stripe page where they could subscribe monthly and receive unlimited hearts. Currently, this is in a test format, so the subscription can only be made if the server is running.'
+            }
+        },
+        'Life in weeks': {
+            'description': `While scrolling the internet, I came across a channel where a man was vlogging about how he colors in one square each week on a sheet full of squares with the title "YOUR LIFE IN WEEKS." This intrigued me, so I decided to search for more information on this topic. After googling "Your life in weeks," I found many offers to buy a poster with 4,000 squares, which, according to the article, is the average lifespan. I wanted to check this poster online but couldn't find any website with such a feature, so I decided to create it myself.`,
+            'slider': {
+                'Life in weeks': `On this site, I tried to implement the functionality shown in the photo.`,
+                'Choise your date of born': `Upon entering the site, the user is greeted by a modal window where they must select their date of birth, which can be changed later if desired. There is also a "Remember me" button that, when clicked, ensures the user won't have to enter their date of birth each time they visit the site.`,
+                'Main page': 'The main page displays "a whole life." One square represents one week, and one row represents one year. The time the user has already lived is shown in black, while the uncolored squares represent the time they have left to live. Additionally, if the user hovers the cursor over a specific square, they will see how old they were or will be at that point.',
+                'Life schema': 'By clicking the "Open schema" button, the user opens a chart that shows different periods of their life: childhood, school, university, work, and retirement. The current position of the user is highlighted in black.',
+                'Mobile version': 'The site is, of course, adapted for all devices, from PCs to the smallest phones.'
+
+            }
+        },
         "buttons": {
             "visit": "Visit the site",
             "code": "See the code"

@@ -1,6 +1,7 @@
 .carousel {
     display: flex;
     justify-content: space-center;
+   
 }
 
 .carouselContainer {
@@ -19,6 +20,7 @@
     height: 100%;
     display: flex;
     border-radius: 1.2rem;
+    transition: all .2s ease-in;
 }
 
 @media(max-width: 1024px) {
